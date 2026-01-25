@@ -25,3 +25,29 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Leaflet tooltip customization */
+.leaflet-tooltip.grundsteuer-tooltip {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  padding: 0;
+  font-family: inherit;
+}
+
+.leaflet-tooltip.grundsteuer-tooltip::before {
+  display: none;
+}
+
+.text-red-600 {
+  color: #dc2626;
+}
+
+.text-green-600 {
+  color: #16a34a;
+}
+
+.text-gray-700 {
+  color: #374151;
+}

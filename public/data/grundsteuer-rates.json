@@ -1,0 +1,97 @@
+{
+  "dataSource": "Manual entry from official municipality sources and Bund der Steuerzahler NRW",
+  "lastUpdated": "2026-01-25",
+  "year": 2025,
+  "description": "Grundsteuer B Hebesätze for major NRW municipalities. This is a sample dataset with verified rates for major cities. Full dataset with all 396 municipalities to be added.",
+  "municipalities": [
+    {
+      "ags": "05315000",
+      "name": "Köln",
+      "kreis": "Kreisfreie Stadt Köln",
+      "isDifferentiated": false,
+      "unified": 550,
+      "year": 2025
+    },
+    {
+      "ags": "05111000",
+      "name": "Düsseldorf",
+      "kreis": "Kreisfreie Stadt Düsseldorf",
+      "isDifferentiated": false,
+      "unified": 374,
+      "year": 2025
+    },
+    {
+      "ags": "05913000",
+      "name": "Dortmund",
+      "kreis": "Kreisfreie Stadt Dortmund",
+      "isDifferentiated": true,
+      "residential": 625,
+      "nonResidential": 800,
+      "year": 2025,
+      "note": "Subject to legal review - court ruling may require unified rate of 800"
+    },
+    {
+      "ags": "05113000",
+      "name": "Essen",
+      "kreis": "Kreisfreie Stadt Essen",
+      "isDifferentiated": true,
+      "residential": 655,
+      "nonResidential": 1290,
+      "year": 2025,
+      "note": "Subject to legal review - Gelsenkirchen court ruling may affect differentiated rates"
+    },
+    {
+      "ags": "05515000",
+      "name": "Münster",
+      "kreis": "Kreisfreie Stadt Münster",
+      "isDifferentiated": true,
+      "residential": 410,
+      "nonResidential": 620,
+      "year": 2025
+    },
+    {
+      "ags": "05711000",
+      "name": "Bielefeld",
+      "kreis": "Kreisfreie Stadt Bielefeld",
+      "isDifferentiated": false,
+      "unified": 765,
+      "year": 2025
+    },
+    {
+      "ags": "05314000",
+      "name": "Bonn",
+      "kreis": "Kreisfreie Stadt Bonn",
+      "isDifferentiated": true,
+      "residential": 657,
+      "nonResidential": 900,
+      "year": 2025,
+      "note": "City administration proposed unified rate of 732 for 2026 due to court rulings"
+    },
+    {
+      "ags": "05112000",
+      "name": "Duisburg",
+      "kreis": "Kreisfreie Stadt Duisburg",
+      "isDifferentiated": true,
+      "residential": 610,
+      "nonResidential": 855,
+      "year": 2025
+    },
+    {
+      "ags": "05114000",
+      "name": "Wuppertal",
+      "kreis": "Kreisfreie Stadt Wuppertal",
+      "isDifferentiated": false,
+      "unified": 855,
+      "year": 2025
+    },
+    {
+      "ags": "05512000",
+      "name": "Bochum",
+      "kreis": "Kreisfreie Stadt Bochum",
+      "isDifferentiated": true,
+      "residential": 680,
+      "nonResidential": 1020,
+      "year": 2025
+    }
+  ]
+}

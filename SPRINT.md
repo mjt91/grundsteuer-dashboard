@@ -1,61 +1,90 @@
 # Sprint Backlog
 
-## Current Sprint: Initial Setup
+## Current Sprint: NRW Map Dashboard Implementation
 Started: 2026-01-25
-Goal: Set up project foundation and core infrastructure
+Goal: Build interactive map showing Grundsteuer B rates for all NRW municipalities with differentiation support
 
 ## In Progress
 <!-- Tasks currently being worked on -->
 
 ## Backlog (Prioritized)
 
-### High Priority
-- [ ] **[FEATURE-001]** Implement property tax calculation form
-  - Create input form for property details (value, location, type)
-  - Add validation for required fields
-  - Implement calculation logic based on German tax rules
+### High Priority - Data Collection & Integration
+- [ ] **[DATA-001]** Obtain and integrate NRW GeoJSON boundaries
+  - Download from [opengeodata.nrw.de](https://www.opengeodata.nrw.de/produkte/geobasis/vkg/dvg/)
+  - Convert Shapefile to GeoJSON if needed (use DVG2 - reduced density)
+  - Verify AGS property exists in each feature
+  - Save as `public/data/nrw-municipalities-geo.json`
+  - Target file size: <2MB for performance
 
-- [ ] **[FEATURE-002]** Build calculation results display
-  - Show breakdown of tax calculation
-  - Display final tax amount
-  - Add explanation of calculation steps
+- [ ] **[DATA-002]** Expand Grundsteuer rates dataset
+  - Currently: 10 major cities
+  - Goal: All 396 NRW municipalities
+  - Source: [Bund der Steuerzahler NRW PDF](https://steuerzahler.de/fileadmin/user_upload/LV_Nordrhein-Westfalen/Dateien/Grundsteuer_B_2025_NRW_Erhebung_BdSt.pdf)
+  - Manual entry from PDF into `public/data/grundsteuer-rates.json`
+  - Include AGS, name, Kreis, rates (unified or differentiated)
 
-- [ ] **[FEATURE-003]** Add data visualization for tax breakdown
-  - Create pie chart showing tax components
-  - Add bar chart for comparison with average values
-  - Use Recharts library
+- [ ] **[DATA-003]** Verify data accuracy
+  - Spot-check rates for 10-15 known municipalities
+  - Verify AGS matching between GeoJSON and rates data
+  - Test differentiated vs unified rate display
+  - Confirm calculations match official sources
 
-### Medium Priority
-- [ ] **[FEATURE-004]** Create API endpoint for calculations
-  - POST /api/calculate endpoint
-  - Input validation
-  - Return structured calculation results
+### Medium Priority - Features & Enhancements
+- [ ] **[FEATURE-001]** Add municipality search/filter
+  - Search bar to find municipality by name
+  - Auto-zoom to selected municipality on map
+  - Highlight selected municipality
+  - Show details panel for selection
 
-- [ ] **[FEATURE-005]** Add calculation history feature
-  - Store previous calculations (localStorage initially)
-  - Display list of past calculations
-  - Allow viewing/comparing previous results
+- [ ] **[FEATURE-002]** Implement click interactions
+  - Click municipality to lock tooltip
+  - Show detailed breakdown panel
+  - Display calculation example for typical property
+  - Add "Compare" functionality
 
-- [ ] **[FEATURE-006]** Improve UI/UX
-  - Add responsive design for mobile devices
-  - Improve form layout and styling
-  - Add loading states and error handling
+- [ ] **[FEATURE-003]** Add chart visualizations
+  - Distribution histogram of Hebesätze
+  - Differentiated vs unified rates pie chart
+  - Top 10 highest/lowest rates comparison
+  - Regional comparisons (by Regierungsbezirk)
 
-### Lower Priority
-- [ ] **[FEATURE-007]** Add municipality-specific multipliers
-  - Create database/file of German municipalities
-  - Auto-populate Hebesatz based on selected municipality
-  - Add search/autocomplete for municipality selection
+- [ ] **[FEATURE-004]** Export and sharing features
+  - Export data as CSV
+  - Share link to specific municipality
+  - Generate PDF report
+  - Download map as image
+
+### Lower Priority - Improvements & Extras
+- [ ] **[FEATURE-005]** Historical comparison
+  - Add 2024 rates data
+  - Show year-over-year changes
+  - Highlight municipalities with significant changes
+  - Timeline slider for historical view
+
+- [ ] **[FEATURE-006]** Mobile optimization
+  - Improve mobile map interactions
+  - Touch-friendly tooltips
+  - Responsive statistics panel
+  - Bottom sheet for municipality details
+
+- [ ] **[FEATURE-007]** Performance optimization
+  - Lazy load GeoJSON by region
+  - Implement map tile caching
+  - Add service worker for offline support
+  - Optimize bundle size
 
 - [ ] **[CHORE-001]** Add unit tests
-  - Test calculation logic
-  - Test API endpoints
-  - Add test runner configuration
+  - Test statistics calculations
+  - Test color scale generation
+  - Test data enrichment
+  - Test tooltip generation
 
-- [ ] **[DOCS-001]** Create user documentation
-  - Add usage guide to README
-  - Document calculation methodology
-  - Add examples
+- [ ] **[DOCS-001]** Improve documentation
+  - Add data collection guide
+  - Document GeoJSON integration process
+  - Create user guide for dashboard
+  - Add API documentation (if implemented)
 
 ## Completed This Sprint
 - [x] **[CHORE-000]** Initial project setup
@@ -63,6 +92,29 @@ Goal: Set up project foundation and core infrastructure
   - Next.js 15 with TypeScript configured
   - Tailwind CSS and Recharts installed
   - Project structure created
+
+- [x] **[SETUP-001]** Map infrastructure setup
+  - Completed: 2026-01-25
+  - Added Leaflet and react-leaflet dependencies
+  - Created TypeScript type definitions (lib/types.ts)
+  - Implemented statistics utility functions (lib/stats.ts)
+  - Color scale calculation based on quartiles
+
+- [x] **[SETUP-002]** Core components implementation
+  - Completed: 2026-01-25
+  - MapLegend component with color scale
+  - StatsPanel component showing NRW statistics
+  - MapTooltip component for municipality details
+  - NRWMap component with Leaflet integration
+  - Main dashboard page with responsive layout
+
+- [x] **[DATA-004]** Sample dataset creation
+  - Completed: 2026-01-25
+  - Collected real data for 10 major NRW cities
+  - Verified rates from official sources
+  - Included differentiated and unified rates
+  - AGS codes for all sample municipalities
+  - Data stored in public/data/grundsteuer-rates.json
 
 ## Blocked
 <!-- Tasks waiting on external dependencies or decisions -->
