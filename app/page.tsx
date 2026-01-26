@@ -6,6 +6,7 @@ import type { GrundsteuerRate } from "@/lib/types";
 import { calculateStatistics, generateColorScale } from "@/lib/stats";
 import StatsPanel from "@/components/StatsPanel";
 import MapLegend from "@/components/MapLegend";
+import KreisAnalysis from "@/components/KreisAnalysis";
 
 // Dynamically import NRWMap to avoid SSR issues with Leaflet
 const NRWMap = dynamic(() => import("@/components/NRWMap"), { ssr: false });
@@ -13,6 +14,7 @@ const NRWMap = dynamic(() => import("@/components/NRWMap"), { ssr: false });
 export default function Home() {
   const [stats, setStats] = useState<any>(null);
   const [colorScale, setColorScale] = useState<any>(null);
+  const [municipalities, setMunicipalities] = useState<GrundsteuerRate[]>([]);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -21,6 +23,8 @@ export default function Home() {
         const response = await fetch("/data/grundsteuer-rates.json");
         const data = await response.json();
         const rates = data.municipalities as GrundsteuerRate[];
+
+        setMunicipalities(rates);
 
         const statistics = calculateStatistics(rates);
         setStats(statistics);
@@ -118,6 +122,14 @@ export default function Home() {
                   </p>
                 </div>
               </div>
+            </div>
+
+            {/* Kreis Analysis Section */}
+            <div className="mt-12">
+              <KreisAnalysis
+                municipalities={municipalities}
+                kreisName="Märkischer Kreis"
+              />
             </div>
           </div>
         )}
