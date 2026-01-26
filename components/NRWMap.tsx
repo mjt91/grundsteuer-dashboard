@@ -29,8 +29,9 @@ const Popup = dynamic(
 
 import "leaflet/dist/leaflet.css";
 
-// City coordinates for the 10 municipalities in our dataset
+// City coordinates for all municipalities in our dataset
 const cityCoordinates: Record<string, [number, number]> = {
+  // Major cities (10)
   "05315000": [50.9375, 6.9603], // Köln
   "05111000": [51.2277, 6.7735], // Düsseldorf
   "05913000": [51.5136, 7.4653], // Dortmund
@@ -41,6 +42,22 @@ const cityCoordinates: Record<string, [number, number]> = {
   "05112000": [51.4344, 6.7623], // Duisburg
   "05114000": [51.2562, 7.1508], // Wuppertal
   "05512000": [51.4818, 7.2162], // Bochum
+  // Märkischer Kreis (15)
+  "05962004": [51.2990, 7.6735], // Altena
+  "05962008": [51.3327, 7.8671], // Balve
+  "05962012": [51.1874, 7.4987], // Halver
+  "05962016": [51.3854, 7.7662], // Hemer
+  "05962020": [51.1796, 7.7444], // Herscheid
+  "05962024": [51.3747, 7.7000], // Iserlohn
+  "05962028": [51.1303, 7.5989], // Kierspe
+  "05962032": [51.2155, 7.6351], // Lüdenscheid
+  "05962036": [51.1063, 7.6409], // Meinerzhagen
+  "05962040": [51.4378, 7.7954], // Menden (Sauerland)
+  "05962044": [51.3167, 7.6167], // Nachrodt-Wiblingwerde
+  "05962048": [51.2780, 7.7810], // Neuenrade
+  "05962052": [51.2137, 7.8746], // Plettenberg
+  "05962056": [51.2390, 7.5550], // Schalksmühle
+  "05962060": [51.2560, 7.7560], // Werdohl
 };
 
 export default function NRWMap() {
