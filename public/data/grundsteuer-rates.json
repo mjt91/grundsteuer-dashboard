@@ -2,115 +2,8 @@
   "dataSource": "Manual entry from official municipality sources and Bund der Steuerzahler NRW",
   "lastUpdated": "2026-01-26",
   "year": 2025,
-  "description": "Grundsteuer B Hebesätze for NRW municipalities. Includes 10 major cities and all 15 municipalities from Märkischer Kreis. Full dataset with all 396 municipalities to be added.",
+  "description": "Grundsteuer B Hebesätze for Märkischer Kreis municipalities. Starting with Halver as test case.",
   "municipalities": [
-    {
-      "ags": "05315000",
-      "name": "Köln",
-      "kreis": "Kreisfreie Stadt Köln",
-      "isDifferentiated": false,
-      "unified": 550,
-      "year": 2025
-    },
-    {
-      "ags": "05111000",
-      "name": "Düsseldorf",
-      "kreis": "Kreisfreie Stadt Düsseldorf",
-      "isDifferentiated": false,
-      "unified": 374,
-      "year": 2025
-    },
-    {
-      "ags": "05913000",
-      "name": "Dortmund",
-      "kreis": "Kreisfreie Stadt Dortmund",
-      "isDifferentiated": true,
-      "residential": 625,
-      "nonResidential": 800,
-      "year": 2025,
-      "note": "Subject to legal review - court ruling may require unified rate of 800"
-    },
-    {
-      "ags": "05113000",
-      "name": "Essen",
-      "kreis": "Kreisfreie Stadt Essen",
-      "isDifferentiated": true,
-      "residential": 655,
-      "nonResidential": 1290,
-      "year": 2025,
-      "note": "Subject to legal review - Gelsenkirchen court ruling may affect differentiated rates"
-    },
-    {
-      "ags": "05515000",
-      "name": "Münster",
-      "kreis": "Kreisfreie Stadt Münster",
-      "isDifferentiated": true,
-      "residential": 410,
-      "nonResidential": 620,
-      "year": 2025
-    },
-    {
-      "ags": "05711000",
-      "name": "Bielefeld",
-      "kreis": "Kreisfreie Stadt Bielefeld",
-      "isDifferentiated": false,
-      "unified": 765,
-      "year": 2025
-    },
-    {
-      "ags": "05314000",
-      "name": "Bonn",
-      "kreis": "Kreisfreie Stadt Bonn",
-      "isDifferentiated": true,
-      "residential": 657,
-      "nonResidential": 900,
-      "year": 2025,
-      "note": "City administration proposed unified rate of 732 for 2026 due to court rulings"
-    },
-    {
-      "ags": "05112000",
-      "name": "Duisburg",
-      "kreis": "Kreisfreie Stadt Duisburg",
-      "isDifferentiated": true,
-      "residential": 610,
-      "nonResidential": 855,
-      "year": 2025
-    },
-    {
-      "ags": "05114000",
-      "name": "Wuppertal",
-      "kreis": "Kreisfreie Stadt Wuppertal",
-      "isDifferentiated": false,
-      "unified": 855,
-      "year": 2025
-    },
-    {
-      "ags": "05512000",
-      "name": "Bochum",
-      "kreis": "Kreisfreie Stadt Bochum",
-      "isDifferentiated": true,
-      "residential": 680,
-      "nonResidential": 1020,
-      "year": 2025
-    },
-    {
-      "ags": "05962004",
-      "name": "Altena",
-      "kreis": "Märkischer Kreis",
-      "isDifferentiated": true,
-      "residential": 1044,
-      "nonResidential": 2020,
-      "year": 2025
-    },
-    {
-      "ags": "05962008",
-      "name": "Balve",
-      "kreis": "Märkischer Kreis",
-      "isDifferentiated": false,
-      "unified": 950,
-      "year": 2025,
-      "note": "Raised from 675 in 2024"
-    },
     {
       "ags": "05962012",
       "name": "Halver",
@@ -118,35 +11,6 @@
       "isDifferentiated": true,
       "residential": 602,
       "nonResidential": 1204,
-      "year": 2025
-    },
-    {
-      "ags": "05962016",
-      "name": "Hemer",
-      "kreis": "Märkischer Kreis",
-      "isDifferentiated": true,
-      "residential": 778,
-      "nonResidential": 1523,
-      "year": 2025,
-      "note": "Using state-recommended revenue-neutral rates"
-    },
-    {
-      "ags": "05962020",
-      "name": "Herscheid",
-      "kreis": "Märkischer Kreis",
-      "isDifferentiated": true,
-      "residential": 671,
-      "nonResidential": 1293,
-      "year": 2025,
-      "note": "Previous unified rate was 680"
-    },
-    {
-      "ags": "05962024",
-      "name": "Iserlohn",
-      "kreis": "Märkischer Kreis",
-      "isDifferentiated": true,
-      "residential": 707,
-      "nonResidential": 1110,
       "year": 2025
     },
     {
@@ -159,60 +23,6 @@
       "year": 2025
     },
     {
-      "ags": "05962032",
-      "name": "Lüdenscheid",
-      "kreis": "Märkischer Kreis",
-      "isDifferentiated": true,
-      "residential": 846,
-      "nonResidential": 1766,
-      "year": 2025
-    },
-    {
-      "ags": "05962036",
-      "name": "Meinerzhagen",
-      "kreis": "Märkischer Kreis",
-      "isDifferentiated": false,
-      "unified": 575,
-      "year": 2025,
-      "note": "Did not implement differentiated rates due to legal uncertainty"
-    },
-    {
-      "ags": "05962040",
-      "name": "Menden (Sauerland)",
-      "kreis": "Märkischer Kreis",
-      "isDifferentiated": true,
-      "residential": 713,
-      "nonResidential": 1227,
-      "year": 2025
-    },
-    {
-      "ags": "05962044",
-      "name": "Nachrodt-Wiblingwerde",
-      "kreis": "Märkischer Kreis",
-      "isDifferentiated": true,
-      "residential": 770,
-      "nonResidential": 1893,
-      "year": 2025
-    },
-    {
-      "ags": "05962048",
-      "name": "Neuenrade",
-      "kreis": "Märkischer Kreis",
-      "isDifferentiated": true,
-      "residential": 644,
-      "nonResidential": 1268,
-      "year": 2025
-    },
-    {
-      "ags": "05962052",
-      "name": "Plettenberg",
-      "kreis": "Märkischer Kreis",
-      "isDifferentiated": false,
-      "unified": 754,
-      "year": 2025,
-      "note": "Raised from 679 in 2024"
-    },
-    {
       "ags": "05962056",
       "name": "Schalksmühle",
       "kreis": "Märkischer Kreis",
@@ -220,15 +30,6 @@
       "residential": 607,
       "nonResidential": 1119,
       "year": 2025
-    },
-    {
-      "ags": "05962060",
-      "name": "Werdohl",
-      "kreis": "Märkischer Kreis",
-      "isDifferentiated": false,
-      "unified": 830,
-      "year": 2025,
-      "note": "Raised from 782 in 2024"
     }
   ]
 }
