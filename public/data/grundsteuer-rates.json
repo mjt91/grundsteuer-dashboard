@@ -2,8 +2,26 @@
   "dataSource": "Manual entry from official municipality sources and Bund der Steuerzahler NRW",
   "lastUpdated": "2026-01-26",
   "year": 2025,
-  "description": "Grundsteuer B Hebesätze for Märkischer Kreis municipalities. Starting with Halver as test case.",
+  "description": "Grundsteuer B Hebesätze for all 15 municipalities in Märkischer Kreis.",
   "municipalities": [
+    {
+      "ags": "05962004",
+      "name": "Altena",
+      "kreis": "Märkischer Kreis",
+      "isDifferentiated": true,
+      "residential": 1044,
+      "nonResidential": 2020,
+      "year": 2025
+    },
+    {
+      "ags": "05962008",
+      "name": "Balve",
+      "kreis": "Märkischer Kreis",
+      "isDifferentiated": false,
+      "unified": 950,
+      "year": 2025,
+      "note": "Raised from 675 in 2024"
+    },
     {
       "ags": "05962012",
       "name": "Halver",
@@ -11,6 +29,35 @@
       "isDifferentiated": true,
       "residential": 602,
       "nonResidential": 1204,
+      "year": 2025
+    },
+    {
+      "ags": "05962016",
+      "name": "Hemer",
+      "kreis": "Märkischer Kreis",
+      "isDifferentiated": true,
+      "residential": 778,
+      "nonResidential": 1523,
+      "year": 2025,
+      "note": "Using state-recommended revenue-neutral rates"
+    },
+    {
+      "ags": "05962020",
+      "name": "Herscheid",
+      "kreis": "Märkischer Kreis",
+      "isDifferentiated": true,
+      "residential": 671,
+      "nonResidential": 1293,
+      "year": 2025,
+      "note": "Previous unified rate was 680"
+    },
+    {
+      "ags": "05962024",
+      "name": "Iserlohn",
+      "kreis": "Märkischer Kreis",
+      "isDifferentiated": true,
+      "residential": 707,
+      "nonResidential": 1110,
       "year": 2025
     },
     {
@@ -23,6 +70,60 @@
       "year": 2025
     },
     {
+      "ags": "05962032",
+      "name": "Lüdenscheid",
+      "kreis": "Märkischer Kreis",
+      "isDifferentiated": true,
+      "residential": 846,
+      "nonResidential": 1766,
+      "year": 2025
+    },
+    {
+      "ags": "05962036",
+      "name": "Meinerzhagen",
+      "kreis": "Märkischer Kreis",
+      "isDifferentiated": false,
+      "unified": 575,
+      "year": 2025,
+      "note": "Did not implement differentiated rates due to legal uncertainty"
+    },
+    {
+      "ags": "05962040",
+      "name": "Menden (Sauerland)",
+      "kreis": "Märkischer Kreis",
+      "isDifferentiated": true,
+      "residential": 713,
+      "nonResidential": 1227,
+      "year": 2025
+    },
+    {
+      "ags": "05962044",
+      "name": "Nachrodt-Wiblingwerde",
+      "kreis": "Märkischer Kreis",
+      "isDifferentiated": true,
+      "residential": 770,
+      "nonResidential": 1893,
+      "year": 2025
+    },
+    {
+      "ags": "05962048",
+      "name": "Neuenrade",
+      "kreis": "Märkischer Kreis",
+      "isDifferentiated": true,
+      "residential": 644,
+      "nonResidential": 1268,
+      "year": 2025
+    },
+    {
+      "ags": "05962052",
+      "name": "Plettenberg",
+      "kreis": "Märkischer Kreis",
+      "isDifferentiated": false,
+      "unified": 754,
+      "year": 2025,
+      "note": "Raised from 679 in 2024"
+    },
+    {
       "ags": "05962056",
       "name": "Schalksmühle",
       "kreis": "Märkischer Kreis",
@@ -30,6 +131,15 @@
       "residential": 607,
       "nonResidential": 1119,
       "year": 2025
+    },
+    {
+      "ags": "05962060",
+      "name": "Werdohl",
+      "kreis": "Märkischer Kreis",
+      "isDifferentiated": false,
+      "unified": 830,
+      "year": 2025,
+      "note": "Raised from 782 in 2024"
     }
   ]
 }

@@ -218,8 +218,8 @@ export default function NRWMap() {
     <div className="w-full h-[600px] rounded-lg overflow-hidden border">
       <MapContainer
         key="nrw-map"
-        center={[51.1856, 7.5509]} // Center between Halver, Schalksmühle, Kierspe
-        zoom={11}
+        center={[51.2500, 7.6350]} // Center of Märkischer Kreis (near Lüdenscheid)
+        zoom={10}
         style={{ height: "100%", width: "100%" }}
         scrollWheelZoom={true}
       >
