@@ -1,433 +1,225 @@
 {
   "dataSource": "Manual entry from official municipality sources, Bund der Steuerzahler NRW, and individual municipality websites",
   "lastUpdated": "2026-02-27",
-  "description": "Grundsteuer B Hebesätze for all municipalities in Märkischer Kreis and Ennepe-Ruhr-Kreis (24 total), including historical data from 2024 showing the impact of the Grundsteuerreform.",
+  "year": 2025,
+  "description": "Grundsteuer B Hebesätze for all municipalities in Märkischer Kreis and Ennepe-Ruhr-Kreis (24 total).",
   "municipalities": [
     {
       "ags": "05954004",
       "name": "Breckerfeld",
       "kreis": "Ennepe-Ruhr-Kreis",
-      "rateHistory": [
-        {
-          "year": 2024,
-          "isDifferentiated": false,
-          "unified": 560
-        },
-        {
-          "year": 2025,
-          "isDifferentiated": false,
-          "unified": 655
-        }
-      ]
+      "isDifferentiated": false,
+      "unified": 655,
+      "year": 2025,
+      "note": "Raised from 560 in 2024"
     },
     {
       "ags": "05954008",
       "name": "Ennepetal",
       "kreis": "Ennepe-Ruhr-Kreis",
-      "rateHistory": [
-        {
-          "year": 2024,
-          "isDifferentiated": false,
-          "unified": 790
-        },
-        {
-          "year": 2025,
-          "isDifferentiated": true,
-          "residential": 853,
-          "nonResidential": 1623
-        }
-      ]
+      "isDifferentiated": true,
+      "residential": 853,
+      "nonResidential": 1623,
+      "year": 2025
     },
     {
       "ags": "05954012",
       "name": "Gevelsberg",
       "kreis": "Ennepe-Ruhr-Kreis",
-      "rateHistory": [
-        {
-          "year": 2024,
-          "isDifferentiated": false,
-          "unified": 695
-        },
-        {
-          "year": 2025,
-          "isDifferentiated": true,
-          "residential": 739,
-          "nonResidential": 1460
-        }
-      ]
+      "isDifferentiated": true,
+      "residential": 739,
+      "nonResidential": 1460,
+      "year": 2025
     },
     {
       "ags": "05954016",
       "name": "Hattingen",
       "kreis": "Ennepe-Ruhr-Kreis",
-      "rateHistory": [
-        {
-          "year": 2024,
-          "isDifferentiated": false,
-          "unified": 875
-        },
-        {
-          "year": 2025,
-          "isDifferentiated": false,
-          "unified": 995
-        }
-      ]
+      "isDifferentiated": false,
+      "unified": 995,
+      "year": 2025,
+      "note": "Raised from 875 in 2024"
     },
     {
       "ags": "05954020",
       "name": "Herdecke",
       "kreis": "Ennepe-Ruhr-Kreis",
-      "rateHistory": [
-        {
-          "year": 2024,
-          "isDifferentiated": false,
-          "unified": 535
-        },
-        {
-          "year": 2025,
-          "isDifferentiated": false,
-          "unified": 914
-        }
-      ]
+      "isDifferentiated": false,
+      "unified": 914,
+      "year": 2025,
+      "note": "Raised from 535 in 2024"
     },
     {
       "ags": "05954024",
       "name": "Schwelm",
       "kreis": "Ennepe-Ruhr-Kreis",
-      "rateHistory": [
-        {
-          "year": 2024,
-          "isDifferentiated": false,
-          "unified": 495
-        },
-        {
-          "year": 2025,
-          "isDifferentiated": false,
-          "unified": 993
-        }
-      ]
+      "isDifferentiated": false,
+      "unified": 993,
+      "year": 2025,
+      "note": "Raised from 495 in 2024"
     },
     {
       "ags": "05954028",
       "name": "Sprockhövel",
       "kreis": "Ennepe-Ruhr-Kreis",
-      "rateHistory": [
-        {
-          "year": 2024,
-          "isDifferentiated": false,
-          "unified": 730
-        },
-        {
-          "year": 2025,
-          "isDifferentiated": false,
-          "unified": 730,
-          "note": "Hebesatz unchanged for 2025 and 2026"
-        }
-      ]
+      "isDifferentiated": false,
+      "unified": 730,
+      "year": 2025,
+      "note": "Unchanged from 2024"
     },
     {
       "ags": "05954032",
       "name": "Wetter (Ruhr)",
       "kreis": "Ennepe-Ruhr-Kreis",
-      "rateHistory": [
-        {
-          "year": 2024,
-          "isDifferentiated": false,
-          "unified": 755
-        },
-        {
-          "year": 2025,
-          "isDifferentiated": true,
-          "residential": 872,
-          "nonResidential": 1426
-        }
-      ]
+      "isDifferentiated": true,
+      "residential": 872,
+      "nonResidential": 1426,
+      "year": 2025
     },
     {
       "ags": "05954036",
       "name": "Witten",
       "kreis": "Ennepe-Ruhr-Kreis",
-      "rateHistory": [
-        {
-          "year": 2024,
-          "isDifferentiated": false,
-          "unified": 910
-        },
-        {
-          "year": 2025,
-          "isDifferentiated": true,
-          "residential": 1110,
-          "nonResidential": 1896
-        }
-      ]
+      "isDifferentiated": true,
+      "residential": 1110,
+      "nonResidential": 1896,
+      "year": 2025
     },
     {
       "ags": "05962004",
       "name": "Altena",
       "kreis": "Märkischer Kreis",
-      "rateHistory": [
-        {
-          "year": 2024,
-          "isDifferentiated": false,
-          "unified": 910
-        },
-        {
-          "year": 2025,
-          "isDifferentiated": true,
-          "residential": 1044,
-          "nonResidential": 2020
-        }
-      ]
+      "isDifferentiated": true,
+      "residential": 1044,
+      "nonResidential": 2020,
+      "year": 2025
     },
     {
       "ags": "05962008",
       "name": "Balve",
       "kreis": "Märkischer Kreis",
-      "rateHistory": [
-        {
-          "year": 2024,
-          "isDifferentiated": false,
-          "unified": 675
-        },
-        {
-          "year": 2025,
-          "isDifferentiated": false,
-          "unified": 950
-        }
-      ]
+      "isDifferentiated": false,
+      "unified": 950,
+      "year": 2025,
+      "note": "Raised from 675 in 2024"
     },
     {
       "ags": "05962012",
       "name": "Halver",
       "kreis": "Märkischer Kreis",
-      "rateHistory": [
-        {
-          "year": 2024,
-          "isDifferentiated": false,
-          "unified": 550
-        },
-        {
-          "year": 2025,
-          "isDifferentiated": true,
-          "residential": 602,
-          "nonResidential": 1204
-        }
-      ]
+      "isDifferentiated": true,
+      "residential": 602,
+      "nonResidential": 1204,
+      "year": 2025
     },
     {
       "ags": "05962016",
       "name": "Hemer",
       "kreis": "Märkischer Kreis",
-      "rateHistory": [
-        {
-          "year": 2024,
-          "isDifferentiated": false,
-          "unified": 680
-        },
-        {
-          "year": 2025,
-          "isDifferentiated": true,
-          "residential": 778,
-          "nonResidential": 1523,
-          "note": "Using state-recommended revenue-neutral rates"
-        }
-      ]
+      "isDifferentiated": true,
+      "residential": 778,
+      "nonResidential": 1523,
+      "year": 2025,
+      "note": "Using state-recommended revenue-neutral rates"
     },
     {
       "ags": "05962020",
       "name": "Herscheid",
       "kreis": "Märkischer Kreis",
-      "rateHistory": [
-        {
-          "year": 2024,
-          "isDifferentiated": false,
-          "unified": 680
-        },
-        {
-          "year": 2025,
-          "isDifferentiated": true,
-          "residential": 671,
-          "nonResidential": 1293
-        }
-      ]
+      "isDifferentiated": true,
+      "residential": 671,
+      "nonResidential": 1293,
+      "year": 2025
     },
     {
       "ags": "05962024",
       "name": "Iserlohn",
       "kreis": "Märkischer Kreis",
-      "rateHistory": [
-        {
-          "year": 2024,
-          "isDifferentiated": false,
-          "unified": 682
-        },
-        {
-          "year": 2025,
-          "isDifferentiated": true,
-          "residential": 707,
-          "nonResidential": 1110
-        }
-      ]
+      "isDifferentiated": true,
+      "residential": 707,
+      "nonResidential": 1110,
+      "year": 2025
     },
     {
       "ags": "05962028",
       "name": "Kierspe",
       "kreis": "Märkischer Kreis",
-      "rateHistory": [
-        {
-          "year": 2024,
-          "isDifferentiated": false,
-          "unified": 537
-        },
-        {
-          "year": 2025,
-          "isDifferentiated": true,
-          "residential": 657,
-          "nonResidential": 1314
-        }
-      ]
+      "isDifferentiated": true,
+      "residential": 657,
+      "nonResidential": 1314,
+      "year": 2025
     },
     {
       "ags": "05962032",
       "name": "Lüdenscheid",
       "kreis": "Märkischer Kreis",
-      "rateHistory": [
-        {
-          "year": 2024,
-          "isDifferentiated": false,
-          "unified": 766
-        },
-        {
-          "year": 2025,
-          "isDifferentiated": true,
-          "residential": 846,
-          "nonResidential": 1766
-        }
-      ]
+      "isDifferentiated": true,
+      "residential": 846,
+      "nonResidential": 1766,
+      "year": 2025
     },
     {
       "ags": "05962036",
       "name": "Meinerzhagen",
       "kreis": "Märkischer Kreis",
-      "rateHistory": [
-        {
-          "year": 2024,
-          "isDifferentiated": false,
-          "unified": 575
-        },
-        {
-          "year": 2025,
-          "isDifferentiated": false,
-          "unified": 575,
-          "note": "Did not implement differentiated rates due to legal uncertainty"
-        }
-      ]
+      "isDifferentiated": false,
+      "unified": 575,
+      "year": 2025,
+      "note": "Did not implement differentiated rates due to legal uncertainty"
     },
     {
       "ags": "05962040",
       "name": "Menden (Sauerland)",
       "kreis": "Märkischer Kreis",
-      "rateHistory": [
-        {
-          "year": 2024,
-          "isDifferentiated": false,
-          "unified": 420
-        },
-        {
-          "year": 2025,
-          "isDifferentiated": true,
-          "residential": 713,
-          "nonResidential": 1227
-        }
-      ]
+      "isDifferentiated": true,
+      "residential": 713,
+      "nonResidential": 1227,
+      "year": 2025
     },
     {
       "ags": "05962044",
       "name": "Nachrodt-Wiblingwerde",
       "kreis": "Märkischer Kreis",
-      "rateHistory": [
-        {
-          "year": 2024,
-          "isDifferentiated": false,
-          "unified": 720
-        },
-        {
-          "year": 2025,
-          "isDifferentiated": true,
-          "residential": 770,
-          "nonResidential": 1893
-        }
-      ]
+      "isDifferentiated": true,
+      "residential": 770,
+      "nonResidential": 1893,
+      "year": 2025
     },
     {
       "ags": "05962048",
       "name": "Neuenrade",
       "kreis": "Märkischer Kreis",
-      "rateHistory": [
-        {
-          "year": 2024,
-          "isDifferentiated": false,
-          "unified": 600
-        },
-        {
-          "year": 2025,
-          "isDifferentiated": true,
-          "residential": 644,
-          "nonResidential": 1268
-        }
-      ]
+      "isDifferentiated": true,
+      "residential": 644,
+      "nonResidential": 1268,
+      "year": 2025
     },
     {
       "ags": "05962052",
       "name": "Plettenberg",
       "kreis": "Märkischer Kreis",
-      "rateHistory": [
-        {
-          "year": 2024,
-          "isDifferentiated": false,
-          "unified": 679
-        },
-        {
-          "year": 2025,
-          "isDifferentiated": false,
-          "unified": 754
-        }
-      ]
+      "isDifferentiated": false,
+      "unified": 754,
+      "year": 2025,
+      "note": "Raised from 679 in 2024"
     },
     {
       "ags": "05962056",
       "name": "Schalksmühle",
       "kreis": "Märkischer Kreis",
-      "rateHistory": [
-        {
-          "year": 2024,
-          "isDifferentiated": false,
-          "unified": 437
-        },
-        {
-          "year": 2025,
-          "isDifferentiated": true,
-          "residential": 607,
-          "nonResidential": 1119
-        }
-      ]
+      "isDifferentiated": true,
+      "residential": 607,
+      "nonResidential": 1119,
+      "year": 2025
     },
     {
       "ags": "05962060",
       "name": "Werdohl",
       "kreis": "Märkischer Kreis",
-      "rateHistory": [
-        {
-          "year": 2024,
-          "isDifferentiated": false,
-          "unified": 782
-        },
-        {
-          "year": 2025,
-          "isDifferentiated": false,
-          "unified": 830
-        }
-      ]
+      "isDifferentiated": false,
+      "unified": 830,
+      "year": 2025,
+      "note": "Raised from 782 in 2024"
     }
   ]
 }
