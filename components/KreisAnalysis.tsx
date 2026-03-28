@@ -259,8 +259,8 @@ export default function KreisAnalysis({
             <XAxis type="number" label={{ value: "Hebesatz (%)", position: "insideBottom", offset: -5 }} />
             <YAxis type="category" dataKey="name" width={110} tick={{ fontSize: 12 }} />
             <Tooltip
-              formatter={(value: number | null) =>
-                value !== null ? `${value}%` : "N/A"
+              formatter={(value: string | number) =>
+                value != null ? `${value}%` : "N/A"
               }
               contentStyle={{
                 backgroundColor: "rgba(255, 255, 255, 0.95)",

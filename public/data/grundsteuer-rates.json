@@ -1,225 +1,3341 @@
 {
-  "dataSource": "Manual entry from official municipality sources, Bund der Steuerzahler NRW, and individual municipality websites",
-  "lastUpdated": "2026-02-27",
+  "dataSource": "Bund der Steuerzahler NRW - Realsteuerhebesätze 2025 (Blitz-Umfrage, Redaktionsschluss 21.01.2025)",
+  "lastUpdated": "2026-03-28",
   "year": 2025,
-  "description": "Grundsteuer B Hebesätze for all municipalities in Märkischer Kreis and Ennepe-Ruhr-Kreis (24 total).",
+  "description": "Grundsteuer B Hebesätze 2025 for all 396 municipalities in NRW.",
   "municipalities": [
+    {
+      "ags": "05111000",
+      "name": "Düsseldorf",
+      "kreis": "kreisfreie Stadt Düsseldorf",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 374
+    },
+    {
+      "ags": "05112000",
+      "name": "Duisburg",
+      "kreis": "kreisfreie Stadt Duisburg",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 886,
+      "nonResidential": 1469
+    },
+    {
+      "ags": "05113000",
+      "name": "Essen",
+      "kreis": "kreisfreie Stadt Essen",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 655,
+      "nonResidential": 1290
+    },
+    {
+      "ags": "05114000",
+      "name": "Krefeld",
+      "kreis": "kreisfreie Stadt Krefeld",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 637,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05116000",
+      "name": "Mönchengladbach",
+      "kreis": "kreisfreie Stadt Mönchengladbach",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 792
+    },
+    {
+      "ags": "05117000",
+      "name": "Mülheim",
+      "kreis": "kreisfreie Stadt Mülheim",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 890
+    },
+    {
+      "ags": "05119000",
+      "name": "Oberhausen",
+      "kreis": "kreisfreie Stadt Oberhausen",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 870,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05120000",
+      "name": "Remscheid",
+      "kreis": "kreisfreie Stadt Remscheid",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 1058
+    },
+    {
+      "ags": "05122000",
+      "name": "Solingen",
+      "kreis": "kreisfreie Stadt Solingen",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 805
+    },
+    {
+      "ags": "05124000",
+      "name": "Wuppertal",
+      "kreis": "kreisfreie Stadt Wuppertal",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 947
+    },
+    {
+      "ags": "05154004",
+      "name": "Bedburg-Hau",
+      "kreis": "Kleve",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 478
+    },
+    {
+      "ags": "05154008",
+      "name": "Emmerich",
+      "kreis": "Kleve",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 671
+    },
+    {
+      "ags": "05154012",
+      "name": "Geldern",
+      "kreis": "Kleve",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 618
+    },
+    {
+      "ags": "05154016",
+      "name": "Goch",
+      "kreis": "Kleve",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 642
+    },
+    {
+      "ags": "05154020",
+      "name": "Issum",
+      "kreis": "Kleve",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 588
+    },
+    {
+      "ags": "05154024",
+      "name": "Kalkar",
+      "kreis": "Kleve",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 656
+    },
+    {
+      "ags": "05154028",
+      "name": "Kerken",
+      "kreis": "Kleve",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 544
+    },
+    {
+      "ags": "05154032",
+      "name": "Kevelaer",
+      "kreis": "Kleve",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 585
+    },
+    {
+      "ags": "05154036",
+      "name": "Kleve",
+      "kreis": "Kleve",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 536
+    },
+    {
+      "ags": "05154040",
+      "name": "Kranenburg",
+      "kreis": "Kleve",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 476
+    },
+    {
+      "ags": "05154044",
+      "name": "Rees",
+      "kreis": "Kleve",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 533
+    },
+    {
+      "ags": "05154048",
+      "name": "Rheurdt",
+      "kreis": "Kleve",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 630
+    },
+    {
+      "ags": "05154052",
+      "name": "Straelen",
+      "kreis": "Kleve",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 447,
+      "nonResidential": 755
+    },
+    {
+      "ags": "05154056",
+      "name": "Uedem",
+      "kreis": "Kleve",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 532
+    },
+    {
+      "ags": "05154060",
+      "name": "Wachtendonk",
+      "kreis": "Kleve",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 581
+    },
+    {
+      "ags": "05154064",
+      "name": "Weeze",
+      "kreis": "Kleve",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 475
+    },
+    {
+      "ags": "05158004",
+      "name": "Erkrath",
+      "kreis": "Mettmann",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 808,
+      "nonResidential": 1340
+    },
+    {
+      "ags": "05158008",
+      "name": "Haan",
+      "kreis": "Mettmann",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 662,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05158012",
+      "name": "Heiligenhaus",
+      "kreis": "Mettmann",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 983
+    },
+    {
+      "ags": "05158016",
+      "name": "Hilden",
+      "kreis": "Mettmann",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 650,
+      "nonResidential": 1300
+    },
+    {
+      "ags": "05158020",
+      "name": "Langenfeld",
+      "kreis": "Mettmann",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 418
+    },
+    {
+      "ags": "05158024",
+      "name": "Mettmann",
+      "kreis": "Mettmann",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 917,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05158026",
+      "name": "Monheim",
+      "kreis": "Mettmann",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 1000
+    },
+    {
+      "ags": "05158028",
+      "name": "Ratingen",
+      "kreis": "Mettmann",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 450,
+      "nonResidential": 710
+    },
+    {
+      "ags": "05158032",
+      "name": "Velbert",
+      "kreis": "Mettmann",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 931,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05158036",
+      "name": "Wülfrath",
+      "kreis": "Mettmann",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 918,
+      "nonResidential": 1744
+    },
+    {
+      "ags": "05162004",
+      "name": "Dormagen",
+      "kreis": "Rhein-Kreis Neuss",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 610
+    },
+    {
+      "ags": "05162008",
+      "name": "Grevenbroich",
+      "kreis": "Rhein-Kreis Neuss",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 703
+    },
+    {
+      "ags": "05162012",
+      "name": "Jüchen",
+      "kreis": "Rhein-Kreis Neuss",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 695
+    },
+    {
+      "ags": "05162016",
+      "name": "Kaarst",
+      "kreis": "Rhein-Kreis Neuss",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 454,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05162020",
+      "name": "Korschenbroich",
+      "kreis": "Rhein-Kreis Neuss",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 690
+    },
+    {
+      "ags": "05162022",
+      "name": "Meerbusch",
+      "kreis": "Rhein-Kreis Neuss",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 425
+    },
+    {
+      "ags": "05162024",
+      "name": "Neuss",
+      "kreis": "Rhein-Kreis Neuss",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 610,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05162028",
+      "name": "Rommerskirchen",
+      "kreis": "Rhein-Kreis Neuss",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 493
+    },
+    {
+      "ags": "05166004",
+      "name": "Brüggen",
+      "kreis": "Viersen",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 547,
+      "nonResidential": 701
+    },
+    {
+      "ags": "05166008",
+      "name": "Grefrath",
+      "kreis": "Viersen",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 606,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05166012",
+      "name": "Kempen",
+      "kreis": "Viersen",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 616
+    },
+    {
+      "ags": "05166016",
+      "name": "Nettetal",
+      "kreis": "Viersen",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 578
+    },
+    {
+      "ags": "05166020",
+      "name": "Niederkrüchten",
+      "kreis": "Viersen",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 505
+    },
+    {
+      "ags": "05166024",
+      "name": "Schwalmtal",
+      "kreis": "Viersen",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 582
+    },
+    {
+      "ags": "05166028",
+      "name": "Tönisvorst",
+      "kreis": "Viersen",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 577
+    },
+    {
+      "ags": "05166032",
+      "name": "Viersen",
+      "kreis": "Viersen",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 484,
+      "nonResidential": 891
+    },
+    {
+      "ags": "05166036",
+      "name": "Willich",
+      "kreis": "Viersen",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 556
+    },
+    {
+      "ags": "05170004",
+      "name": "Alpen",
+      "kreis": "Wesel",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 626
+    },
+    {
+      "ags": "05170008",
+      "name": "Dinslaken",
+      "kreis": "Wesel",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 648
+    },
+    {
+      "ags": "05170012",
+      "name": "Hamminkeln",
+      "kreis": "Wesel",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 771,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05170016",
+      "name": "Hünxe",
+      "kreis": "Wesel",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 693,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05170020",
+      "name": "Kamp-Lintfort",
+      "kreis": "Wesel",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 720,
+      "nonResidential": 1400
+    },
+    {
+      "ags": "05170024",
+      "name": "Moers",
+      "kreis": "Wesel",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 947,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05170028",
+      "name": "Neukirchen-Vluyn",
+      "kreis": "Wesel",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 715
+    },
+    {
+      "ags": "05170032",
+      "name": "Rheinberg",
+      "kreis": "Wesel",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 687
+    },
+    {
+      "ags": "05170036",
+      "name": "Schermbeck",
+      "kreis": "Wesel",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 797,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05170040",
+      "name": "Sonsbeck",
+      "kreis": "Wesel",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 510
+    },
+    {
+      "ags": "05170044",
+      "name": "Voerde",
+      "kreis": "Wesel",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 688,
+      "nonResidential": 1274
+    },
+    {
+      "ags": "05170048",
+      "name": "Wesel",
+      "kreis": "Wesel",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 782,
+      "nonResidential": 1353
+    },
+    {
+      "ags": "05170052",
+      "name": "Xanten",
+      "kreis": "Wesel",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 1096,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05314000",
+      "name": "Bonn",
+      "kreis": "kreisfreie Stadt Bonn",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 702,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05315000",
+      "name": "Köln",
+      "kreis": "kreisfreie Stadt Köln",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 475
+    },
+    {
+      "ags": "05316000",
+      "name": "Leverkusen",
+      "kreis": "kreisfreie Stadt Leverkusen",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 750
+    },
+    {
+      "ags": "05334002",
+      "name": "Aachen",
+      "kreis": "kreisfreie Stadt Aachen",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 625,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05334004",
+      "name": "Alsdorf",
+      "kreis": "Städteregion Aachen",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 1018,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05334008",
+      "name": "Baesweiler",
+      "kreis": "Städteregion Aachen",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 710
+    },
+    {
+      "ags": "05334012",
+      "name": "Eschweiler",
+      "kreis": "Städteregion Aachen",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 895
+    },
+    {
+      "ags": "05334016",
+      "name": "Herzogenrath",
+      "kreis": "Städteregion Aachen",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 733,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05334020",
+      "name": "Monschau",
+      "kreis": "Städteregion Aachen",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 1068,
+      "nonResidential": 1602
+    },
+    {
+      "ags": "05334024",
+      "name": "Roetgen",
+      "kreis": "Städteregion Aachen",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 660
+    },
+    {
+      "ags": "05334028",
+      "name": "Simmerath",
+      "kreis": "Städteregion Aachen",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 634
+    },
+    {
+      "ags": "05334032",
+      "name": "Stolberg",
+      "kreis": "Städteregion Aachen",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 692
+    },
+    {
+      "ags": "05334036",
+      "name": "Würselen",
+      "kreis": "Städteregion Aachen",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 976,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05358004",
+      "name": "Aldenhoven",
+      "kreis": "Düren",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 885
+    },
+    {
+      "ags": "05358008",
+      "name": "Düren",
+      "kreis": "Düren",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 673
+    },
+    {
+      "ags": "05358012",
+      "name": "Heimbach",
+      "kreis": "Düren",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 876
+    },
+    {
+      "ags": "05358016",
+      "name": "Hürtgenwald",
+      "kreis": "Düren",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 950
+    },
+    {
+      "ags": "05358020",
+      "name": "Inden",
+      "kreis": "Düren",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 930
+    },
+    {
+      "ags": "05358024",
+      "name": "Jülich",
+      "kreis": "Düren",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 937,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05358028",
+      "name": "Kreuzau",
+      "kreis": "Düren",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 836
+    },
+    {
+      "ags": "05358032",
+      "name": "Langerwehe",
+      "kreis": "Düren",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 1036,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05358036",
+      "name": "Linnich",
+      "kreis": "Düren",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 700,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05358040",
+      "name": "Merzenich",
+      "kreis": "Düren",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 788
+    },
+    {
+      "ags": "05358044",
+      "name": "Nideggen",
+      "kreis": "Düren",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 991,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05358048",
+      "name": "Niederzier",
+      "kreis": "Düren",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 730
+    },
+    {
+      "ags": "05358052",
+      "name": "Nörvenich",
+      "kreis": "Düren",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 829,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05358056",
+      "name": "Titz",
+      "kreis": "Düren",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 799
+    },
+    {
+      "ags": "05358060",
+      "name": "Vettweiß",
+      "kreis": "Düren",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 723
+    },
+    {
+      "ags": "05362004",
+      "name": "Bedburg",
+      "kreis": "Rhein-Erft-Kreis",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 973
+    },
+    {
+      "ags": "05362008",
+      "name": "Bergheim",
+      "kreis": "Rhein-Erft-Kreis",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 897
+    },
+    {
+      "ags": "05362012",
+      "name": "Brühl",
+      "kreis": "Rhein-Erft-Kreis",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 700
+    },
+    {
+      "ags": "05362016",
+      "name": "Elsdorf",
+      "kreis": "Rhein-Erft-Kreis",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 1010
+    },
+    {
+      "ags": "05362020",
+      "name": "Erftstadt",
+      "kreis": "Rhein-Erft-Kreis",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 635
+    },
+    {
+      "ags": "05362024",
+      "name": "Frechen",
+      "kreis": "Rhein-Erft-Kreis",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 519
+    },
+    {
+      "ags": "05362028",
+      "name": "Hürth",
+      "kreis": "Rhein-Erft-Kreis",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 446
+    },
+    {
+      "ags": "05362032",
+      "name": "Kerpen",
+      "kreis": "Rhein-Erft-Kreis",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 832
+    },
+    {
+      "ags": "05362036",
+      "name": "Pulheim",
+      "kreis": "Rhein-Erft-Kreis",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 467,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05362040",
+      "name": "Wesseling",
+      "kreis": "Rhein-Erft-Kreis",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 865
+    },
+    {
+      "ags": "05366004",
+      "name": "Bad Münstereifel",
+      "kreis": "Euskirchen",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 900
+    },
+    {
+      "ags": "05366008",
+      "name": "Blankenheim",
+      "kreis": "Euskirchen",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 750
+    },
+    {
+      "ags": "05366012",
+      "name": "Dahlem",
+      "kreis": "Euskirchen",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 639
+    },
+    {
+      "ags": "05366016",
+      "name": "Euskirchen",
+      "kreis": "Euskirchen",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 497,
+      "nonResidential": 914
+    },
+    {
+      "ags": "05366020",
+      "name": "Hellenthal",
+      "kreis": "Euskirchen",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 750,
+      "nonResidential": 1220
+    },
+    {
+      "ags": "05366024",
+      "name": "Kall",
+      "kreis": "Euskirchen",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 590,
+      "nonResidential": 1180
+    },
+    {
+      "ags": "05366028",
+      "name": "Mechernich",
+      "kreis": "Euskirchen",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 595
+    },
+    {
+      "ags": "05366032",
+      "name": "Nettersheim",
+      "kreis": "Euskirchen",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 580
+    },
+    {
+      "ags": "05366036",
+      "name": "Schleiden",
+      "kreis": "Euskirchen",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 1008
+    },
+    {
+      "ags": "05366040",
+      "name": "Weilerswist",
+      "kreis": "Euskirchen",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 692,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05366044",
+      "name": "Zülpich",
+      "kreis": "Euskirchen",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 831
+    },
+    {
+      "ags": "05370004",
+      "name": "Erkelenz",
+      "kreis": "Heinsberg",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 595
+    },
+    {
+      "ags": "05370008",
+      "name": "Gangelt",
+      "kreis": "Heinsberg",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 571
+    },
+    {
+      "ags": "05370012",
+      "name": "Geilenkirchen",
+      "kreis": "Heinsberg",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 729,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05370016",
+      "name": "Heinsberg",
+      "kreis": "Heinsberg",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 569,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05370020",
+      "name": "Hückelhoven",
+      "kreis": "Heinsberg",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 634,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05370024",
+      "name": "Selfkant",
+      "kreis": "Heinsberg",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 713,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05370028",
+      "name": "Übach-Palenberg",
+      "kreis": "Heinsberg",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 666
+    },
+    {
+      "ags": "05370032",
+      "name": "Waldfeucht",
+      "kreis": "Heinsberg",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 576
+    },
+    {
+      "ags": "05370036",
+      "name": "Wassenberg",
+      "kreis": "Heinsberg",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 499
+    },
+    {
+      "ags": "05370040",
+      "name": "Wegberg",
+      "kreis": "Heinsberg",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 596,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05374004",
+      "name": "Bergneustadt",
+      "kreis": "Oberbergischer Kreis",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 1050,
+      "nonResidential": 2000
+    },
+    {
+      "ags": "05374008",
+      "name": "Engelskirchen",
+      "kreis": "Oberbergischer Kreis",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 603,
+      "nonResidential": 917
+    },
+    {
+      "ags": "05374012",
+      "name": "Gummersbach",
+      "kreis": "Oberbergischer Kreis",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 871,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05374016",
+      "name": "Hückeswagen",
+      "kreis": "Oberbergischer Kreis",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 830,
+      "nonResidential": 1357
+    },
+    {
+      "ags": "05374020",
+      "name": "Lindlar",
+      "kreis": "Oberbergischer Kreis",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 1245
+    },
+    {
+      "ags": "05374024",
+      "name": "Marienheide",
+      "kreis": "Oberbergischer Kreis",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 835
+    },
+    {
+      "ags": "05374028",
+      "name": "Morsbach",
+      "kreis": "Oberbergischer Kreis",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 829
+    },
+    {
+      "ags": "05374032",
+      "name": "Nümbrecht",
+      "kreis": "Oberbergischer Kreis",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 730
+    },
+    {
+      "ags": "05374036",
+      "name": "Radevormwald",
+      "kreis": "Oberbergischer Kreis",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 532,
+      "nonResidential": 1102
+    },
+    {
+      "ags": "05374040",
+      "name": "Reichshof",
+      "kreis": "Oberbergischer Kreis",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 785
+    },
+    {
+      "ags": "05374044",
+      "name": "Waldbröl",
+      "kreis": "Oberbergischer Kreis",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 815,
+      "nonResidential": 1309
+    },
+    {
+      "ags": "05374048",
+      "name": "Wiehl",
+      "kreis": "Oberbergischer Kreis",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 535,
+      "nonResidential": 960
+    },
+    {
+      "ags": "05374052",
+      "name": "Wipperfürth",
+      "kreis": "Oberbergischer Kreis",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 1004,
+      "nonResidential": 1855
+    },
+    {
+      "ags": "05378004",
+      "name": "Bergisch Gladbach",
+      "kreis": "Rheinisch-Bergischer Kreis",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 653,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05378008",
+      "name": "Burscheid",
+      "kreis": "Rheinisch-Bergischer Kreis",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 505
+    },
+    {
+      "ags": "05378012",
+      "name": "Kürten",
+      "kreis": "Rheinisch-Bergischer Kreis",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 684
+    },
+    {
+      "ags": "05378016",
+      "name": "Leichlingen",
+      "kreis": "Rheinisch-Bergischer Kreis",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 700,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05378020",
+      "name": "Odenthal",
+      "kreis": "Rheinisch-Bergischer Kreis",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 950
+    },
+    {
+      "ags": "05378024",
+      "name": "Overath",
+      "kreis": "Rheinisch-Bergischer Kreis",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 865,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05378028",
+      "name": "Rösrath",
+      "kreis": "Rheinisch-Bergischer Kreis",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 599,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05378032",
+      "name": "Wermelskirchen",
+      "kreis": "Rheinisch-Bergischer Kreis",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 725,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05382004",
+      "name": "Alfter",
+      "kreis": "Rhein-Sieg-Kreis",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 904
+    },
+    {
+      "ags": "05382008",
+      "name": "Bad Honnef",
+      "kreis": "Rhein-Sieg-Kreis",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 771
+    },
+    {
+      "ags": "05382012",
+      "name": "Bornheim",
+      "kreis": "Rhein-Sieg-Kreis",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 679
+    },
+    {
+      "ags": "05382016",
+      "name": "Eitorf",
+      "kreis": "Rhein-Sieg-Kreis",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 960
+    },
+    {
+      "ags": "05382020",
+      "name": "Hennef",
+      "kreis": "Rhein-Sieg-Kreis",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 882
+    },
+    {
+      "ags": "05382024",
+      "name": "Königswinter",
+      "kreis": "Rhein-Sieg-Kreis",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 664,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05382028",
+      "name": "Lohmar",
+      "kreis": "Rhein-Sieg-Kreis",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 782
+    },
+    {
+      "ags": "05382032",
+      "name": "Meckenheim",
+      "kreis": "Rhein-Sieg-Kreis",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 895
+    },
+    {
+      "ags": "05382036",
+      "name": "Much",
+      "kreis": "Rhein-Sieg-Kreis",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 890
+    },
+    {
+      "ags": "05382040",
+      "name": "Neunkirchen-Seelscheid",
+      "kreis": "Rhein-Sieg-Kreis",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 870
+    },
+    {
+      "ags": "05382044",
+      "name": "Niederkassel",
+      "kreis": "Rhein-Sieg-Kreis",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 1010,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05382048",
+      "name": "Rheinbach",
+      "kreis": "Rhein-Sieg-Kreis",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 787
+    },
+    {
+      "ags": "05382052",
+      "name": "Ruppichteroth",
+      "kreis": "Rhein-Sieg-Kreis",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 822,
+      "nonResidential": 1121
+    },
+    {
+      "ags": "05382056",
+      "name": "Sankt Augustin",
+      "kreis": "Rhein-Sieg-Kreis",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 796
+    },
+    {
+      "ags": "05382060",
+      "name": "Siegburg",
+      "kreis": "Rhein-Sieg-Kreis",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 790
+    },
+    {
+      "ags": "05382064",
+      "name": "Swisttal",
+      "kreis": "Rhein-Sieg-Kreis",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 800
+    },
+    {
+      "ags": "05382068",
+      "name": "Troisdorf",
+      "kreis": "Rhein-Sieg-Kreis",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 595,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05382072",
+      "name": "Wachtberg",
+      "kreis": "Rhein-Sieg-Kreis",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 672
+    },
+    {
+      "ags": "05382076",
+      "name": "Windeck",
+      "kreis": "Rhein-Sieg-Kreis",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 960
+    },
+    {
+      "ags": "05512000",
+      "name": "Bottrop",
+      "kreis": "kreisfreie Stadt Bottrop",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 619,
+      "nonResidential": 1163
+    },
+    {
+      "ags": "05513000",
+      "name": "Gelsenkirchen",
+      "kreis": "kreisfreie Stadt Gelsenkirchen",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 696,
+      "nonResidential": 1397
+    },
+    {
+      "ags": "05515000",
+      "name": "Münster",
+      "kreis": "kreisfreie Stadt Münster",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 410,
+      "nonResidential": 620
+    },
+    {
+      "ags": "05554004",
+      "name": "Ahaus",
+      "kreis": "Borken",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 505,
+      "nonResidential": 922
+    },
+    {
+      "ags": "05554008",
+      "name": "Bocholt",
+      "kreis": "Borken",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 613,
+      "nonResidential": 1224
+    },
+    {
+      "ags": "05554012",
+      "name": "Borken",
+      "kreis": "Borken",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 592,
+      "nonResidential": 860
+    },
+    {
+      "ags": "05554016",
+      "name": "Gescher",
+      "kreis": "Borken",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 588,
+      "nonResidential": 1013
+    },
+    {
+      "ags": "05554020",
+      "name": "Gronau",
+      "kreis": "Borken",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 453,
+      "nonResidential": 959
+    },
+    {
+      "ags": "05554024",
+      "name": "Heek",
+      "kreis": "Borken",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 536,
+      "nonResidential": 863
+    },
+    {
+      "ags": "05554028",
+      "name": "Heiden",
+      "kreis": "Borken",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 505
+    },
+    {
+      "ags": "05554032",
+      "name": "Isselburg",
+      "kreis": "Borken",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 630
+    },
+    {
+      "ags": "05554036",
+      "name": "Legden",
+      "kreis": "Borken",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 505
+    },
+    {
+      "ags": "05554040",
+      "name": "Raesfeld",
+      "kreis": "Borken",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 600
+    },
+    {
+      "ags": "05554044",
+      "name": "Reken",
+      "kreis": "Borken",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 443
+    },
+    {
+      "ags": "05554048",
+      "name": "Rhede",
+      "kreis": "Borken",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 667,
+      "nonResidential": 1331
+    },
+    {
+      "ags": "05554052",
+      "name": "Schöppingen",
+      "kreis": "Borken",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 413
+    },
+    {
+      "ags": "05554056",
+      "name": "Stadtlohn",
+      "kreis": "Borken",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 511,
+      "nonResidential": 875
+    },
+    {
+      "ags": "05554060",
+      "name": "Südlohn",
+      "kreis": "Borken",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 658,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05554064",
+      "name": "Velen",
+      "kreis": "Borken",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 696,
+      "nonResidential": 890
+    },
+    {
+      "ags": "05554068",
+      "name": "Vreden",
+      "kreis": "Borken",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 663,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05558004",
+      "name": "Ascheberg",
+      "kreis": "Coesfeld",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 584
+    },
+    {
+      "ags": "05558008",
+      "name": "Billerbeck",
+      "kreis": "Coesfeld",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 612
+    },
+    {
+      "ags": "05558012",
+      "name": "Coesfeld",
+      "kreis": "Coesfeld",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 728
+    },
+    {
+      "ags": "05558016",
+      "name": "Dülmen",
+      "kreis": "Coesfeld",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 712,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05558020",
+      "name": "Havixbeck",
+      "kreis": "Coesfeld",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 686,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05558024",
+      "name": "Lüdinghausen",
+      "kreis": "Coesfeld",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 580,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05558028",
+      "name": "Nordkirchen",
+      "kreis": "Coesfeld",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 636
+    },
+    {
+      "ags": "05558032",
+      "name": "Nottuln",
+      "kreis": "Coesfeld",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 923
+    },
+    {
+      "ags": "05558036",
+      "name": "Olfen",
+      "kreis": "Coesfeld",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 534
+    },
+    {
+      "ags": "05558040",
+      "name": "Rosendahl",
+      "kreis": "Coesfeld",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 711
+    },
+    {
+      "ags": "05558044",
+      "name": "Senden",
+      "kreis": "Coesfeld",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 594
+    },
+    {
+      "ags": "05562004",
+      "name": "Castrop-Rauxel",
+      "kreis": "Recklinghausen",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 825
+    },
+    {
+      "ags": "05562008",
+      "name": "Datteln",
+      "kreis": "Recklinghausen",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 825
+    },
+    {
+      "ags": "05562012",
+      "name": "Dorsten",
+      "kreis": "Recklinghausen",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 870
+    },
+    {
+      "ags": "05562014",
+      "name": "Gladbeck",
+      "kreis": "Recklinghausen",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 1085,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05562016",
+      "name": "Haltern am See",
+      "kreis": "Recklinghausen",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 825
+    },
+    {
+      "ags": "05562020",
+      "name": "Herten",
+      "kreis": "Recklinghausen",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 920
+    },
+    {
+      "ags": "05562024",
+      "name": "Marl",
+      "kreis": "Recklinghausen",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 833,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05562028",
+      "name": "Oer-Erkenschwick",
+      "kreis": "Recklinghausen",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 871,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05562032",
+      "name": "Recklinghausen",
+      "kreis": "Recklinghausen",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 663,
+      "nonResidential": 1173
+    },
+    {
+      "ags": "05562036",
+      "name": "Waltrop",
+      "kreis": "Recklinghausen",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 700
+    },
+    {
+      "ags": "05566004",
+      "name": "Altenberge",
+      "kreis": "Steinfurt",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 558,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05566008",
+      "name": "Emsdetten",
+      "kreis": "Steinfurt",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 759,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05566012",
+      "name": "Greven",
+      "kreis": "Steinfurt",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 582,
+      "nonResidential": 1161
+    },
+    {
+      "ags": "05566016",
+      "name": "Hörstel",
+      "kreis": "Steinfurt",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 645
+    },
+    {
+      "ags": "05566020",
+      "name": "Hopsten",
+      "kreis": "Steinfurt",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 589
+    },
+    {
+      "ags": "05566024",
+      "name": "Horstmar",
+      "kreis": "Steinfurt",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 664
+    },
+    {
+      "ags": "05566028",
+      "name": "Ibbenbüren",
+      "kreis": "Steinfurt",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 651,
+      "nonResidential": 1172
+    },
+    {
+      "ags": "05566032",
+      "name": "Ladbergen",
+      "kreis": "Steinfurt",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 661
+    },
+    {
+      "ags": "05566036",
+      "name": "Laer",
+      "kreis": "Steinfurt",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 870
+    },
+    {
+      "ags": "05566040",
+      "name": "Lengerich",
+      "kreis": "Steinfurt",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 577,
+      "nonResidential": 1004
+    },
+    {
+      "ags": "05566044",
+      "name": "Lienen",
+      "kreis": "Steinfurt",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 660
+    },
+    {
+      "ags": "05566048",
+      "name": "Lotte",
+      "kreis": "Steinfurt",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 593,
+      "nonResidential": 1120
+    },
+    {
+      "ags": "05566052",
+      "name": "Metelen",
+      "kreis": "Steinfurt",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 688
+    },
+    {
+      "ags": "05566056",
+      "name": "Mettingen",
+      "kreis": "Steinfurt",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 710
+    },
+    {
+      "ags": "05566060",
+      "name": "Neuenkirchen",
+      "kreis": "Steinfurt",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 568,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05566064",
+      "name": "Nordwalde",
+      "kreis": "Steinfurt",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 664
+    },
+    {
+      "ags": "05566068",
+      "name": "Ochtrup",
+      "kreis": "Steinfurt",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 612,
+      "nonResidential": 775
+    },
+    {
+      "ags": "05566072",
+      "name": "Recke",
+      "kreis": "Steinfurt",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 743
+    },
+    {
+      "ags": "05566076",
+      "name": "Rheine",
+      "kreis": "Steinfurt",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 760
+    },
+    {
+      "ags": "05566080",
+      "name": "Saerbeck",
+      "kreis": "Steinfurt",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 877
+    },
+    {
+      "ags": "05566084",
+      "name": "Steinfurt",
+      "kreis": "Steinfurt",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 691,
+      "nonResidential": 1078
+    },
+    {
+      "ags": "05566088",
+      "name": "Tecklenburg",
+      "kreis": "Steinfurt",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 701
+    },
+    {
+      "ags": "05566092",
+      "name": "Westerkappeln",
+      "kreis": "Steinfurt",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 686,
+      "nonResidential": 1141
+    },
+    {
+      "ags": "05566096",
+      "name": "Wettringen",
+      "kreis": "Steinfurt",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 490
+    },
+    {
+      "ags": "05570004",
+      "name": "Ahlen",
+      "kreis": "Warendorf",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 699,
+      "nonResidential": 1319
+    },
+    {
+      "ags": "05570008",
+      "name": "Beckum",
+      "kreis": "Warendorf",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 607,
+      "nonResidential": 1110
+    },
+    {
+      "ags": "05570012",
+      "name": "Beelen",
+      "kreis": "Warendorf",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 743
+    },
+    {
+      "ags": "05570016",
+      "name": "Drensteinfurt",
+      "kreis": "Warendorf",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 542
+    },
+    {
+      "ags": "05570020",
+      "name": "Ennigerloh",
+      "kreis": "Warendorf",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 772
+    },
+    {
+      "ags": "05570024",
+      "name": "Everswinkel",
+      "kreis": "Warendorf",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 628
+    },
+    {
+      "ags": "05570028",
+      "name": "Oelde",
+      "kreis": "Warendorf",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 647,
+      "nonResidential": 1190
+    },
+    {
+      "ags": "05570032",
+      "name": "Ostbevern",
+      "kreis": "Warendorf",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 554,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05570036",
+      "name": "Sassenberg",
+      "kreis": "Warendorf",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 615
+    },
+    {
+      "ags": "05570040",
+      "name": "Sendenhorst",
+      "kreis": "Warendorf",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 664
+    },
+    {
+      "ags": "05570044",
+      "name": "Telgte",
+      "kreis": "Warendorf",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 605
+    },
+    {
+      "ags": "05570048",
+      "name": "Wadersloh",
+      "kreis": "Warendorf",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 628
+    },
+    {
+      "ags": "05570052",
+      "name": "Warendorf",
+      "kreis": "Warendorf",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 671,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05711000",
+      "name": "Bielefeld",
+      "kreis": "kreisfreie Stadt Bielefeld",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 765
+    },
+    {
+      "ags": "05754004",
+      "name": "Borgholzhausen",
+      "kreis": "Gütersloh",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 706
+    },
+    {
+      "ags": "05754008",
+      "name": "Gütersloh",
+      "kreis": "Gütersloh",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 703
+    },
+    {
+      "ags": "05754012",
+      "name": "Halle",
+      "kreis": "Gütersloh",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 520
+    },
+    {
+      "ags": "05754016",
+      "name": "Harsewinkel",
+      "kreis": "Gütersloh",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 345
+    },
+    {
+      "ags": "05754020",
+      "name": "Herzebrock-Clarholz",
+      "kreis": "Gütersloh",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 550
+    },
+    {
+      "ags": "05754024",
+      "name": "Langenberg",
+      "kreis": "Gütersloh",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 655
+    },
+    {
+      "ags": "05754028",
+      "name": "Rheda-Wiedenbrück",
+      "kreis": "Gütersloh",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 647
+    },
+    {
+      "ags": "05754032",
+      "name": "Rietberg",
+      "kreis": "Gütersloh",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 596
+    },
+    {
+      "ags": "05754036",
+      "name": "Schloß Holte-Stukenbrock",
+      "kreis": "Gütersloh",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 310
+    },
+    {
+      "ags": "05754040",
+      "name": "Steinhagen",
+      "kreis": "Gütersloh",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 650
+    },
+    {
+      "ags": "05754044",
+      "name": "Verl",
+      "kreis": "Gütersloh",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 238
+    },
+    {
+      "ags": "05754048",
+      "name": "Versmold",
+      "kreis": "Gütersloh",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 684
+    },
+    {
+      "ags": "05754052",
+      "name": "Werther",
+      "kreis": "Gütersloh",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 615
+    },
+    {
+      "ags": "05758004",
+      "name": "Bünde",
+      "kreis": "Herford",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 629
+    },
+    {
+      "ags": "05758008",
+      "name": "Enger",
+      "kreis": "Herford",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 780
+    },
+    {
+      "ags": "05758012",
+      "name": "Herford",
+      "kreis": "Herford",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 778,
+      "nonResidential": 1555
+    },
+    {
+      "ags": "05758016",
+      "name": "Hiddenhausen",
+      "kreis": "Herford",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 635
+    },
+    {
+      "ags": "05758020",
+      "name": "Kirchlengern",
+      "kreis": "Herford",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 588
+    },
+    {
+      "ags": "05758024",
+      "name": "Löhne",
+      "kreis": "Herford",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 605,
+      "nonResidential": 1210
+    },
+    {
+      "ags": "05758028",
+      "name": "Rödinghausen",
+      "kreis": "Herford",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 529
+    },
+    {
+      "ags": "05758032",
+      "name": "Spenge",
+      "kreis": "Herford",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 756
+    },
+    {
+      "ags": "05758036",
+      "name": "Vlotho",
+      "kreis": "Herford",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 729,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05762004",
+      "name": "Bad Driburg",
+      "kreis": "Höxter",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 755
+    },
+    {
+      "ags": "05762008",
+      "name": "Beverungen",
+      "kreis": "Höxter",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 759
+    },
+    {
+      "ags": "05762012",
+      "name": "Borgentreich",
+      "kreis": "Höxter",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 583,
+      "nonResidential": 1136
+    },
+    {
+      "ags": "05762016",
+      "name": "Brakel",
+      "kreis": "Höxter",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 748
+    },
+    {
+      "ags": "05762020",
+      "name": "Höxter",
+      "kreis": "Höxter",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 920
+    },
+    {
+      "ags": "05762024",
+      "name": "Marienmünster",
+      "kreis": "Höxter",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 677
+    },
+    {
+      "ags": "05762028",
+      "name": "Nieheim",
+      "kreis": "Höxter",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 639
+    },
+    {
+      "ags": "05762032",
+      "name": "Steinheim",
+      "kreis": "Höxter",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 789
+    },
+    {
+      "ags": "05762036",
+      "name": "Warburg",
+      "kreis": "Höxter",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 745
+    },
+    {
+      "ags": "05762040",
+      "name": "Willebadessen",
+      "kreis": "Höxter",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 663
+    },
+    {
+      "ags": "05766004",
+      "name": "Augustdorf",
+      "kreis": "Lippe",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 670
+    },
+    {
+      "ags": "05766008",
+      "name": "Bad Salzuflen",
+      "kreis": "Lippe",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 620
+    },
+    {
+      "ags": "05766012",
+      "name": "Barntrup",
+      "kreis": "Lippe",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 886
+    },
+    {
+      "ags": "05766016",
+      "name": "Blomberg",
+      "kreis": "Lippe",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 840,
+      "nonResidential": 1645
+    },
+    {
+      "ags": "05766020",
+      "name": "Detmold",
+      "kreis": "Lippe",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 685
+    },
+    {
+      "ags": "05766024",
+      "name": "Dörentrup",
+      "kreis": "Lippe",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 794
+    },
+    {
+      "ags": "05766028",
+      "name": "Extertal",
+      "kreis": "Lippe",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 744,
+      "nonResidential": 1195
+    },
+    {
+      "ags": "05766032",
+      "name": "Horn-Bad Meinberg",
+      "kreis": "Lippe",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 967,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05766036",
+      "name": "Kalletal",
+      "kreis": "Lippe",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 828
+    },
+    {
+      "ags": "05766040",
+      "name": "Lage",
+      "kreis": "Lippe",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 650
+    },
+    {
+      "ags": "05766044",
+      "name": "Lemgo",
+      "kreis": "Lippe",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 706,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05766048",
+      "name": "Leopoldshöhe",
+      "kreis": "Lippe",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 730
+    },
+    {
+      "ags": "05766052",
+      "name": "Lügde",
+      "kreis": "Lippe",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 893
+    },
+    {
+      "ags": "05766056",
+      "name": "Oerlinghausen",
+      "kreis": "Lippe",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 652
+    },
+    {
+      "ags": "05766060",
+      "name": "Schieder-Schwalenberg",
+      "kreis": "Lippe",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 955
+    },
+    {
+      "ags": "05766064",
+      "name": "Schlangen",
+      "kreis": "Lippe",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 694
+    },
+    {
+      "ags": "05770004",
+      "name": "Bad Oeynhausen",
+      "kreis": "Minden-Lübbecke",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 724
+    },
+    {
+      "ags": "05770008",
+      "name": "Espelkamp",
+      "kreis": "Minden-Lübbecke",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 579
+    },
+    {
+      "ags": "05770012",
+      "name": "Hille",
+      "kreis": "Minden-Lübbecke",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 767
+    },
+    {
+      "ags": "05770016",
+      "name": "Hüllhorst",
+      "kreis": "Minden-Lübbecke",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 543
+    },
+    {
+      "ags": "05770020",
+      "name": "Lübbecke",
+      "kreis": "Minden-Lübbecke",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 429
+    },
+    {
+      "ags": "05770024",
+      "name": "Minden",
+      "kreis": "Minden-Lübbecke",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 586,
+      "nonResidential": 1172
+    },
+    {
+      "ags": "05770028",
+      "name": "Petershagen",
+      "kreis": "Minden-Lübbecke",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 774
+    },
+    {
+      "ags": "05770032",
+      "name": "Porta Westfalica",
+      "kreis": "Minden-Lübbecke",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 649,
+      "nonResidential": 1125
+    },
+    {
+      "ags": "05770036",
+      "name": "Preußisch Oldendorf",
+      "kreis": "Minden-Lübbecke",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 842
+    },
+    {
+      "ags": "05770040",
+      "name": "Rahden",
+      "kreis": "Minden-Lübbecke",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 599
+    },
+    {
+      "ags": "05770044",
+      "name": "Stemwede",
+      "kreis": "Minden-Lübbecke",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 501
+    },
+    {
+      "ags": "05774004",
+      "name": "Altenbeken",
+      "kreis": "Paderborn",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 565
+    },
+    {
+      "ags": "05774008",
+      "name": "Bad Lippspringe",
+      "kreis": "Paderborn",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 513,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05774012",
+      "name": "Borchen",
+      "kreis": "Paderborn",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 561,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05774016",
+      "name": "Büren",
+      "kreis": "Paderborn",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 664
+    },
+    {
+      "ags": "05774020",
+      "name": "Delbrück",
+      "kreis": "Paderborn",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 539
+    },
+    {
+      "ags": "05774024",
+      "name": "Hövelhof",
+      "kreis": "Paderborn",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 560
+    },
+    {
+      "ags": "05774028",
+      "name": "Lichtenau",
+      "kreis": "Paderborn",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 595
+    },
+    {
+      "ags": "05774032",
+      "name": "Paderborn",
+      "kreis": "Paderborn",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 579
+    },
+    {
+      "ags": "05774036",
+      "name": "Salzkotten",
+      "kreis": "Paderborn",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 581
+    },
+    {
+      "ags": "05774040",
+      "name": "Bad Wünnenberg",
+      "kreis": "Paderborn",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 597
+    },
+    {
+      "ags": "05911000",
+      "name": "Bochum",
+      "kreis": "kreisfreie Stadt Bochum",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 715,
+      "nonResidential": 1190
+    },
+    {
+      "ags": "05913000",
+      "name": "Dortmund",
+      "kreis": "kreisfreie Stadt Dortmund",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 625,
+      "nonResidential": 1245
+    },
+    {
+      "ags": "05914000",
+      "name": "Hagen",
+      "kreis": "kreisfreie Stadt Hagen",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 1139
+    },
+    {
+      "ags": "05915000",
+      "name": "Hamm",
+      "kreis": "kreisfreie Stadt Hamm",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 669,
+      "nonResidential": 1338
+    },
+    {
+      "ags": "05916000",
+      "name": "Herne",
+      "kreis": "kreisfreie Stadt Herne",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 990
+    },
     {
       "ags": "05954004",
       "name": "Breckerfeld",
       "kreis": "Ennepe-Ruhr-Kreis",
       "isDifferentiated": false,
-      "unified": 655,
       "year": 2025,
-      "note": "Raised from 560 in 2024"
+      "unified": 560
     },
     {
       "ags": "05954008",
       "name": "Ennepetal",
       "kreis": "Ennepe-Ruhr-Kreis",
       "isDifferentiated": true,
+      "year": 2025,
       "residential": 853,
-      "nonResidential": 1623,
-      "year": 2025
+      "nonResidential": 1623
     },
     {
       "ags": "05954012",
       "name": "Gevelsberg",
       "kreis": "Ennepe-Ruhr-Kreis",
-      "isDifferentiated": true,
-      "residential": 739,
-      "nonResidential": 1460,
-      "year": 2025
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 900,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
     },
     {
       "ags": "05954016",
       "name": "Hattingen",
       "kreis": "Ennepe-Ruhr-Kreis",
       "isDifferentiated": false,
-      "unified": 995,
       "year": 2025,
-      "note": "Raised from 875 in 2024"
+      "unified": 995
     },
     {
       "ags": "05954020",
       "name": "Herdecke",
       "kreis": "Ennepe-Ruhr-Kreis",
       "isDifferentiated": false,
-      "unified": 914,
       "year": 2025,
-      "note": "Raised from 535 in 2024"
+      "unified": 914
     },
     {
       "ags": "05954024",
       "name": "Schwelm",
       "kreis": "Ennepe-Ruhr-Kreis",
       "isDifferentiated": false,
-      "unified": 993,
       "year": 2025,
-      "note": "Raised from 495 in 2024"
+      "unified": 995
     },
     {
       "ags": "05954028",
       "name": "Sprockhövel",
       "kreis": "Ennepe-Ruhr-Kreis",
       "isDifferentiated": false,
-      "unified": 730,
       "year": 2025,
-      "note": "Unchanged from 2024"
+      "unified": 730
     },
     {
       "ags": "05954032",
       "name": "Wetter (Ruhr)",
       "kreis": "Ennepe-Ruhr-Kreis",
       "isDifferentiated": true,
+      "year": 2025,
       "residential": 872,
-      "nonResidential": 1426,
-      "year": 2025
+      "nonResidential": 1426
     },
     {
       "ags": "05954036",
       "name": "Witten",
       "kreis": "Ennepe-Ruhr-Kreis",
       "isDifferentiated": true,
+      "year": 2025,
       "residential": 1110,
-      "nonResidential": 1896,
-      "year": 2025
+      "nonResidential": 1896
+    },
+    {
+      "ags": "05958004",
+      "name": "Arnsberg",
+      "kreis": "Hochsauerlandkreis",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 723,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05958008",
+      "name": "Bestwig",
+      "kreis": "Hochsauerlandkreis",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 548,
+      "nonResidential": 1120
+    },
+    {
+      "ags": "05958012",
+      "name": "Brilon",
+      "kreis": "Hochsauerlandkreis",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 550,
+      "nonResidential": 960
+    },
+    {
+      "ags": "05958016",
+      "name": "Eslohe",
+      "kreis": "Hochsauerlandkreis",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 627
+    },
+    {
+      "ags": "05958020",
+      "name": "Hallenberg",
+      "kreis": "Hochsauerlandkreis",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 517,
+      "nonResidential": 1034
+    },
+    {
+      "ags": "05958024",
+      "name": "Marsberg",
+      "kreis": "Hochsauerlandkreis",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 673
+    },
+    {
+      "ags": "05958028",
+      "name": "Medebach",
+      "kreis": "Hochsauerlandkreis",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 505,
+      "nonResidential": 1010
+    },
+    {
+      "ags": "05958032",
+      "name": "Meschede",
+      "kreis": "Hochsauerlandkreis",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 575
+    },
+    {
+      "ags": "05958036",
+      "name": "Olsberg",
+      "kreis": "Hochsauerlandkreis",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 565,
+      "nonResidential": 1130
+    },
+    {
+      "ags": "05958040",
+      "name": "Schmallenberg",
+      "kreis": "Hochsauerlandkreis",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 530
+    },
+    {
+      "ags": "05958044",
+      "name": "Sundern",
+      "kreis": "Hochsauerlandkreis",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 686,
+      "nonResidential": 1243
+    },
+    {
+      "ags": "05958048",
+      "name": "Winterberg",
+      "kreis": "Hochsauerlandkreis",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 490,
+      "nonResidential": 915
     },
     {
       "ags": "05962004",
       "name": "Altena",
       "kreis": "Märkischer Kreis",
       "isDifferentiated": true,
-      "residential": 1044,
-      "nonResidential": 2020,
-      "year": 2025
+      "year": 2025,
+      "residential": 1010,
+      "nonResidential": 2020
     },
     {
       "ags": "05962008",
       "name": "Balve",
       "kreis": "Märkischer Kreis",
       "isDifferentiated": false,
-      "unified": 950,
       "year": 2025,
-      "note": "Raised from 675 in 2024"
+      "unified": 950
     },
     {
       "ags": "05962012",
       "name": "Halver",
       "kreis": "Märkischer Kreis",
-      "isDifferentiated": true,
-      "residential": 602,
-      "nonResidential": 1204,
-      "year": 2025
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 757,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
     },
     {
       "ags": "05962016",
       "name": "Hemer",
       "kreis": "Märkischer Kreis",
       "isDifferentiated": true,
-      "residential": 778,
-      "nonResidential": 1523,
       "year": 2025,
-      "note": "Using state-recommended revenue-neutral rates"
+      "residential": 778,
+      "nonResidential": 1523
     },
     {
       "ags": "05962020",
       "name": "Herscheid",
       "kreis": "Märkischer Kreis",
       "isDifferentiated": true,
+      "year": 2025,
       "residential": 671,
-      "nonResidential": 1293,
-      "year": 2025
+      "nonResidential": 1293
     },
     {
       "ags": "05962024",
       "name": "Iserlohn",
       "kreis": "Märkischer Kreis",
       "isDifferentiated": true,
+      "year": 2025,
       "residential": 707,
-      "nonResidential": 1110,
-      "year": 2025
+      "nonResidential": 1110
     },
     {
       "ags": "05962028",
       "name": "Kierspe",
       "kreis": "Märkischer Kreis",
       "isDifferentiated": true,
+      "year": 2025,
       "residential": 657,
-      "nonResidential": 1314,
-      "year": 2025
+      "nonResidential": 1314
     },
     {
       "ags": "05962032",
       "name": "Lüdenscheid",
       "kreis": "Märkischer Kreis",
       "isDifferentiated": true,
-      "residential": 846,
-      "nonResidential": 1766,
-      "year": 2025
+      "year": 2025,
+      "residential": 883,
+      "nonResidential": 1766
     },
     {
       "ags": "05962036",
       "name": "Meinerzhagen",
       "kreis": "Märkischer Kreis",
       "isDifferentiated": false,
-      "unified": 575,
       "year": 2025,
-      "note": "Did not implement differentiated rates due to legal uncertainty"
+      "unified": 575
     },
     {
       "ags": "05962040",
-      "name": "Menden (Sauerland)",
+      "name": "Menden",
       "kreis": "Märkischer Kreis",
       "isDifferentiated": true,
+      "year": 2025,
       "residential": 713,
-      "nonResidential": 1227,
-      "year": 2025
+      "nonResidential": 1227
     },
     {
       "ags": "05962044",
       "name": "Nachrodt-Wiblingwerde",
       "kreis": "Märkischer Kreis",
       "isDifferentiated": true,
-      "residential": 770,
-      "nonResidential": 1893,
-      "year": 2025
+      "year": 2025,
+      "residential": 720,
+      "nonResidential": 1440
     },
     {
       "ags": "05962048",
       "name": "Neuenrade",
       "kreis": "Märkischer Kreis",
-      "isDifferentiated": true,
-      "residential": 644,
-      "nonResidential": 1268,
-      "year": 2025
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 777,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
     },
     {
       "ags": "05962052",
       "name": "Plettenberg",
       "kreis": "Märkischer Kreis",
-      "isDifferentiated": false,
-      "unified": 754,
+      "isDifferentiated": true,
       "year": 2025,
-      "note": "Raised from 679 in 2024"
+      "residential": 754,
+      "nonResidential": 1508
     },
     {
       "ags": "05962056",
       "name": "Schalksmühle",
       "kreis": "Märkischer Kreis",
       "isDifferentiated": true,
+      "year": 2025,
       "residential": 607,
-      "nonResidential": 1119,
-      "year": 2025
+      "nonResidential": 1119
     },
     {
       "ags": "05962060",
       "name": "Werdohl",
       "kreis": "Märkischer Kreis",
-      "isDifferentiated": false,
-      "unified": 830,
+      "isDifferentiated": true,
       "year": 2025,
-      "note": "Raised from 782 in 2024"
+      "residential": 830,
+      "nonResidential": 1660
+    },
+    {
+      "ags": "05966004",
+      "name": "Attendorn",
+      "kreis": "Olpe",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 468,
+      "nonResidential": 895
+    },
+    {
+      "ags": "05966008",
+      "name": "Drolshagen",
+      "kreis": "Olpe",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 695
+    },
+    {
+      "ags": "05966012",
+      "name": "Finnentrop",
+      "kreis": "Olpe",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 627,
+      "nonResidential": 1253
+    },
+    {
+      "ags": "05966016",
+      "name": "Kirchhundem",
+      "kreis": "Olpe",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 758,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05966020",
+      "name": "Lennestadt",
+      "kreis": "Olpe",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 527,
+      "nonResidential": 1023
+    },
+    {
+      "ags": "05966024",
+      "name": "Olpe",
+      "kreis": "Olpe",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 512,
+      "nonResidential": 995
+    },
+    {
+      "ags": "05966028",
+      "name": "Wenden",
+      "kreis": "Olpe",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 469
+    },
+    {
+      "ags": "05970004",
+      "name": "Bad Berleburg",
+      "kreis": "Siegen-Wittgenstein",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 592,
+      "nonResidential": 1018
+    },
+    {
+      "ags": "05970008",
+      "name": "Burbach",
+      "kreis": "Siegen-Wittgenstein",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 448,
+      "nonResidential": 1043
+    },
+    {
+      "ags": "05970012",
+      "name": "Erndtebrück",
+      "kreis": "Siegen-Wittgenstein",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 635,
+      "nonResidential": 1345
+    },
+    {
+      "ags": "05970016",
+      "name": "Freudenberg",
+      "kreis": "Siegen-Wittgenstein",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 713,
+      "nonResidential": 1364
+    },
+    {
+      "ags": "05970020",
+      "name": "Hilchenbach",
+      "kreis": "Siegen-Wittgenstein",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 800,
+      "nonResidential": 1680
+    },
+    {
+      "ags": "05970024",
+      "name": "Kreuztal",
+      "kreis": "Siegen-Wittgenstein",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 905,
+      "nonResidential": 1810
+    },
+    {
+      "ags": "05970028",
+      "name": "Bad Laasphe",
+      "kreis": "Siegen-Wittgenstein",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 800,
+      "nonResidential": 1600
+    },
+    {
+      "ags": "05970032",
+      "name": "Netphen",
+      "kreis": "Siegen-Wittgenstein",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 714,
+      "nonResidential": 1546
+    },
+    {
+      "ags": "05970036",
+      "name": "Neunkirchen",
+      "kreis": "Siegen-Wittgenstein",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 652,
+      "nonResidential": 1304
+    },
+    {
+      "ags": "05970040",
+      "name": "Siegen",
+      "kreis": "Siegen-Wittgenstein",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 770,
+      "nonResidential": 1540
+    },
+    {
+      "ags": "05970044",
+      "name": "Wilnsdorf",
+      "kreis": "Siegen-Wittgenstein",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 863,
+      "nonResidential": 1577
+    },
+    {
+      "ags": "05974004",
+      "name": "Anröchte",
+      "kreis": "Soest",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 531,
+      "nonResidential": 914
+    },
+    {
+      "ags": "05974008",
+      "name": "Bad Sassendorf",
+      "kreis": "Soest",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 640,
+      "nonResidential": 759
+    },
+    {
+      "ags": "05974012",
+      "name": "Ense",
+      "kreis": "Soest",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 723
+    },
+    {
+      "ags": "05974016",
+      "name": "Erwitte",
+      "kreis": "Soest",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 711
+    },
+    {
+      "ags": "05974020",
+      "name": "Geseke",
+      "kreis": "Soest",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 673,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05974024",
+      "name": "Lippetal",
+      "kreis": "Soest",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 661
+    },
+    {
+      "ags": "05974028",
+      "name": "Lippstadt",
+      "kreis": "Soest",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 468,
+      "nonResidential": 1072
+    },
+    {
+      "ags": "05974032",
+      "name": "Möhnesee",
+      "kreis": "Soest",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 735,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05974036",
+      "name": "Rüthen",
+      "kreis": "Soest",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 595
+    },
+    {
+      "ags": "05974040",
+      "name": "Soest",
+      "kreis": "Soest",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 781
+    },
+    {
+      "ags": "05974044",
+      "name": "Warstein",
+      "kreis": "Soest",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 850
+    },
+    {
+      "ags": "05974048",
+      "name": "Welver",
+      "kreis": "Soest",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 799
+    },
+    {
+      "ags": "05974052",
+      "name": "Werl",
+      "kreis": "Soest",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 790,
+      "nonResidential": 1570
+    },
+    {
+      "ags": "05974056",
+      "name": "Wickede (Ruhr)",
+      "kreis": "Soest",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 895
+    },
+    {
+      "ags": "05978004",
+      "name": "Bergkamen",
+      "kreis": "Unna",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 670
+    },
+    {
+      "ags": "05978008",
+      "name": "Bönen",
+      "kreis": "Unna",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 992
+    },
+    {
+      "ags": "05978012",
+      "name": "Fröndenberg",
+      "kreis": "Unna",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 993
+    },
+    {
+      "ags": "05978016",
+      "name": "Holzwickede",
+      "kreis": "Unna",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 683,
+      "note": "Hebesätze noch nicht beschlossen, aufkommensneutraler Hebesatz"
+    },
+    {
+      "ags": "05978020",
+      "name": "Kamen",
+      "kreis": "Unna",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 940
+    },
+    {
+      "ags": "05978024",
+      "name": "Lünen",
+      "kreis": "Unna",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 760
+    },
+    {
+      "ags": "05978028",
+      "name": "Schwerte",
+      "kreis": "Unna",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 890,
+      "nonResidential": 1750
+    },
+    {
+      "ags": "05978032",
+      "name": "Selm",
+      "kreis": "Unna",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 799,
+      "nonResidential": 1194
+    },
+    {
+      "ags": "05978036",
+      "name": "Unna",
+      "kreis": "Unna",
+      "isDifferentiated": true,
+      "year": 2025,
+      "residential": 843,
+      "nonResidential": 1679
+    },
+    {
+      "ags": "05978040",
+      "name": "Werne",
+      "kreis": "Unna",
+      "isDifferentiated": false,
+      "year": 2025,
+      "unified": 884
     }
   ]
 }

@@ -176,7 +176,7 @@ export default function NRWMap() {
         : `${municipality.unified}%`;
 
       const avgDiff = municipality.isDifferentiated
-        ? municipality.averageRate - stats.average
+        ? municipality.displayRate - stats.average
         : municipality.unified! - stats.average;
 
       const diffText =
@@ -249,7 +249,7 @@ export default function NRWMap() {
             : `${municipality.unified}%`;
 
           const avgDiff = municipality.isDifferentiated
-            ? municipality.averageRate - stats.average
+            ? municipality.displayRate - stats.average
             : municipality.unified! - stats.average;
 
           const diffText =
