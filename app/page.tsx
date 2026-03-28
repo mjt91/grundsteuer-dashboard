@@ -7,6 +7,7 @@ import { calculateStatistics, generateColorScale } from "@/lib/stats";
 import StatsPanel from "@/components/StatsPanel";
 import MapLegend from "@/components/MapLegend";
 import KreisAnalysis from "@/components/KreisAnalysis";
+import RateHistogram from "@/components/RateHistogram";
 
 // Dynamically import NRWMap to avoid SSR issues with Leaflet
 const NRWMap = dynamic(() => import("@/components/NRWMap"), { ssr: false });
@@ -61,6 +62,18 @@ export default function Home() {
         ) : (
           <div className="space-y-6">
             {stats && <StatsPanel stats={stats} />}
+
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+              <div className="lg:col-span-2">
+                <RateHistogram municipalities={municipalities} />
+              </div>
+              <div className="lg:col-span-1">
+                {/* Placeholder for additional chart */}
+                <div className="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg border shadow-sm h-full flex items-center justify-center">
+                  <p className="text-gray-500 text-sm">Additional chart coming soon</p>
+                </div>
+              </div>
+            </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
               <div className="lg:col-span-3">
