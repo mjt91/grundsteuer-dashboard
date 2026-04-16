@@ -18,51 +18,12 @@ const TileLayer = dynamic(
   () => import("react-leaflet").then((mod) => mod.TileLayer),
   { ssr: false }
 );
-const CircleMarker = dynamic(
-  () => import("react-leaflet").then((mod) => mod.CircleMarker),
-  { ssr: false }
-);
-const Popup = dynamic(
-  () => import("react-leaflet").then((mod) => mod.Popup),
-  { ssr: false }
-);
 const GeoJSON = dynamic(
   () => import("react-leaflet").then((mod) => mod.GeoJSON),
   { ssr: false }
 );
 
 import "leaflet/dist/leaflet.css";
-
-// City coordinates for all municipalities in our dataset
-const cityCoordinates: Record<string, [number, number]> = {
-  // Major cities (10)
-  "05315000": [50.9375, 6.9603], // Köln
-  "05111000": [51.2277, 6.7735], // Düsseldorf
-  "05913000": [51.5136, 7.4653], // Dortmund
-  "05113000": [51.4556, 7.0116], // Essen
-  "05515000": [51.9607, 7.6261], // Münster
-  "05711000": [52.0302, 8.5325], // Bielefeld
-  "05314000": [50.7374, 7.0982], // Bonn
-  "05112000": [51.4344, 6.7623], // Duisburg
-  "05114000": [51.2562, 7.1508], // Wuppertal
-  "05512000": [51.4818, 7.2162], // Bochum
-  // Märkischer Kreis (15)
-  "05962004": [51.2990, 7.6735], // Altena
-  "05962008": [51.3327, 7.8671], // Balve
-  "05962012": [51.1874, 7.4987], // Halver
-  "05962016": [51.3854, 7.7662], // Hemer
-  "05962020": [51.1796, 7.7444], // Herscheid
-  "05962024": [51.3747, 7.7000], // Iserlohn
-  "05962028": [51.1303, 7.5989], // Kierspe
-  "05962032": [51.2155, 7.6351], // Lüdenscheid
-  "05962036": [51.1063, 7.6409], // Meinerzhagen
-  "05962040": [51.4378, 7.7954], // Menden (Sauerland)
-  "05962044": [51.3167, 7.6167], // Nachrodt-Wiblingwerde
-  "05962048": [51.2780, 7.7810], // Neuenrade
-  "05962052": [51.2137, 7.8746], // Plettenberg
-  "05962056": [51.2390, 7.5550], // Schalksmühle
-  "05962060": [51.2560, 7.7560], // Werdohl
-};
 
 export default function NRWMap() {
   const [enrichedData, setEnrichedData] = useState<MunicipalityData[]>([]);
@@ -228,7 +189,6 @@ export default function NRWMap() {
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
 
-        {/* Render GeoJSON polygons if available */}
         {geoJsonData && (
           <GeoJSON
             key={JSON.stringify(geoJsonData)}
@@ -237,67 +197,6 @@ export default function NRWMap() {
             onEachFeature={onEachFeature}
           />
         )}
-
-        {/* Render city markers */}
-        {enrichedData.map((municipality) => {
-          const coordinates = cityCoordinates[municipality.ags];
-          if (!coordinates) return null;
-
-          // Create popup HTML
-          const rate = municipality.isDifferentiated
-            ? `Wohn: ${municipality.residential}% / Nichtwohn: ${municipality.nonResidential}%`
-            : `${municipality.unified}%`;
-
-          const avgDiff = municipality.isDifferentiated
-            ? municipality.displayRate - stats.average
-            : municipality.unified! - stats.average;
-
-          const diffText =
-            avgDiff > 0
-              ? `+${avgDiff.toFixed(0)}% über Durchschnitt`
-              : `${avgDiff.toFixed(0)}% unter Durchschnitt`;
-
-          return (
-            <CircleMarker
-              key={municipality.ags}
-              center={coordinates}
-              radius={15}
-              pathOptions={{
-                fillColor: municipality.color,
-                fillOpacity: 0.8,
-                color: "#333",
-                weight: 2,
-              }}
-            >
-              <Popup>
-                <div className="p-2 min-w-[200px]">
-                  <h3 className="font-bold text-lg mb-1">
-                    {municipality.name}
-                  </h3>
-                  <p className="text-sm text-gray-600 mb-2">
-                    {municipality.kreis}
-                  </p>
-                  <div className="space-y-1">
-                    <p className="text-sm">
-                      <span className="font-semibold">Hebesatz:</span> {rate}
-                    </p>
-                    <p
-                      className="text-xs"
-                      style={{
-                        color: avgDiff > 0 ? "#dc2626" : "#16a34a",
-                      }}
-                    >
-                      {diffText}
-                    </p>
-                    <p className="text-xs text-gray-500 mt-2">
-                      NRW-Durchschnitt: {stats.average.toFixed(0)}%
-                    </p>
-                  </div>
-                </div>
-              </Popup>
-            </CircleMarker>
-          );
-        })}
       </MapContainer>
     </div>
   );
