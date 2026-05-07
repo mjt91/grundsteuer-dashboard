@@ -27,6 +27,8 @@ export default function Home() {
   const [selectedMunicipality, setSelectedMunicipality] =
     useState<MunicipalityData | null>(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [didApplyUrlParam, setDidApplyUrlParam] = useState(false);
+  const [copied, setCopied] = useState(false);
 
   useEffect(() => {
     async function loadData() {
@@ -58,12 +60,37 @@ export default function Home() {
     return enrichMunicipalityData(municipalities, stats, colorScale);
   }, [municipalities, stats, colorScale]);
 
+  useEffect(() => {
+    if (didApplyUrlParam || municipalityData.length === 0) return;
+    const params = new URLSearchParams(window.location.search);
+    const ags = params.get("ags");
+    if (ags) {
+      const match = municipalityData.find((m) => m.ags === ags);
+      if (match) {
+        setSelectedMunicipality(match);
+      }
+    }
+    setDidApplyUrlParam(true);
+  }, [municipalityData, didApplyUrlParam]);
+
   const handleSelect = (m: MunicipalityData) => {
     setSelectedMunicipality(m);
+    window.history.pushState({}, "", `?ags=${m.ags}`);
   };
 
   const handleClear = () => {
     setSelectedMunicipality(null);
+    window.history.pushState({}, "", window.location.pathname);
+  };
+
+  const handleCopyLink = async () => {
+    try {
+      await navigator.clipboard.writeText(window.location.href);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (error) {
+      console.error("Failed to copy link:", error);
+    }
   };
 
   return (
@@ -97,9 +124,26 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
               <div className="lg:col-span-3">
                 <div className="bg-white dark:bg-gray-800 p-4 rounded-lg border shadow-sm">
-                  <h2 className="text-lg font-semibold mb-4">
-                    Interaktive Karte
-                  </h2>
+                  <div className="flex items-center justify-between mb-4 gap-2">
+                    <h2 className="text-lg font-semibold">
+                      Interaktive Karte
+                    </h2>
+                    {selectedMunicipality && (
+                      <button
+                        onClick={handleCopyLink}
+                        className="text-xs px-3 py-1.5 rounded-md border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors flex items-center gap-1.5"
+                        title="Direktlink zu dieser Gemeinde kopieren"
+                      >
+                        {copied ? (
+                          <span className="text-green-600 dark:text-green-400 font-medium">
+                            Kopiert!
+                          </span>
+                        ) : (
+                          <span>Link kopieren</span>
+                        )}
+                      </button>
+                    )}
+                  </div>
                   {stats && (
                     <NRWMap
                       municipalitiesData={municipalityData}

@@ -33,6 +33,17 @@ export default function MunicipalityDetail({
   onClear,
 }: MunicipalityDetailProps) {
   const [propertyValue, setPropertyValue] = useState<string>("250000");
+  const [copied, setCopied] = useState(false);
+
+  const handleShareLink = async () => {
+    try {
+      await navigator.clipboard.writeText(window.location.href);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (error) {
+      console.error("Failed to copy link:", error);
+    }
+  };
 
   const taxResult = useMemo(() => {
     if (!municipality) return null;
@@ -89,12 +100,20 @@ export default function MunicipalityDetail({
             </p>
           )}
         </div>
-        <button
-          onClick={onClear}
-          className="text-xs text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 underline"
-        >
-          Schließen
-        </button>
+        <div className="flex items-center gap-3 flex-shrink-0">
+          <button
+            onClick={handleShareLink}
+            className="text-xs text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 underline"
+          >
+            {copied ? "Kopiert!" : "Link teilen"}
+          </button>
+          <button
+            onClick={onClear}
+            className="text-xs text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 underline"
+          >
+            Schließen
+          </button>
+        </div>
       </div>
 
       {/* Rates */}
