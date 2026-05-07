@@ -1,21 +1,33 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import dynamic from "next/dynamic";
-import type { GrundsteuerRate } from "@/lib/types";
-import { calculateStatistics, generateColorScale } from "@/lib/stats";
+import type {
+  ColorScale,
+  GrundsteuerRate,
+  GrundsteuerStatistics,
+  MunicipalityData,
+} from "@/lib/types";
+import {
+  calculateStatistics,
+  enrichMunicipalityData,
+  generateColorScale,
+} from "@/lib/stats";
 import StatsPanel from "@/components/StatsPanel";
 import MapLegend from "@/components/MapLegend";
 import KreisAnalysis from "@/components/KreisAnalysis";
 import RateHistogram from "@/components/RateHistogram";
+import MunicipalitySearch from "@/components/MunicipalitySearch";
+import MunicipalityDetail from "@/components/MunicipalityDetail";
 
-// Dynamically import NRWMap to avoid SSR issues with Leaflet
 const NRWMap = dynamic(() => import("@/components/NRWMap"), { ssr: false });
 
 export default function Home() {
-  const [stats, setStats] = useState<any>(null);
-  const [colorScale, setColorScale] = useState<any>(null);
+  const [stats, setStats] = useState<GrundsteuerStatistics | null>(null);
+  const [colorScale, setColorScale] = useState<ColorScale | null>(null);
   const [municipalities, setMunicipalities] = useState<GrundsteuerRate[]>([]);
+  const [selectedMunicipality, setSelectedMunicipality] =
+    useState<MunicipalityData | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -43,6 +55,19 @@ export default function Home() {
     loadData();
   }, []);
 
+  const municipalityData = useMemo<MunicipalityData[]>(() => {
+    if (!stats || !colorScale || municipalities.length === 0) return [];
+    return enrichMunicipalityData(municipalities, stats, colorScale);
+  }, [municipalities, stats, colorScale]);
+
+  const handleSelect = (m: MunicipalityData) => {
+    setSelectedMunicipality(m);
+  };
+
+  const handleClear = () => {
+    setSelectedMunicipality(null);
+  };
+
   return (
     <main className="min-h-screen p-4 md:p-8">
       <div className="max-w-[1600px] mx-auto">
@@ -68,9 +93,10 @@ export default function Home() {
                 <RateHistogram municipalities={municipalities} />
               </div>
               <div className="lg:col-span-1">
-                {/* Placeholder for additional chart */}
                 <div className="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg border shadow-sm h-full flex items-center justify-center">
-                  <p className="text-gray-500 text-sm">Additional chart coming soon</p>
+                  <p className="text-gray-500 text-sm">
+                    Additional chart coming soon
+                  </p>
                 </div>
               </div>
             </div>
@@ -78,20 +104,44 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
               <div className="lg:col-span-3">
                 <div className="bg-white dark:bg-gray-800 p-4 rounded-lg border shadow-sm">
-                  <h2 className="text-lg font-semibold mb-4">
-                    Interaktive Karte
-                  </h2>
-                  <NRWMap />
+                  <div className="flex items-center justify-between gap-4 mb-4">
+                    <h2 className="text-lg font-semibold whitespace-nowrap">
+                      Interaktive Karte
+                    </h2>
+                    <div className="flex-1 max-w-md">
+                      <MunicipalitySearch
+                        municipalities={municipalities}
+                        enriched={municipalityData}
+                        onSelect={handleSelect}
+                      />
+                    </div>
+                  </div>
+                  {stats && (
+                    <NRWMap
+                      municipalitiesData={municipalityData}
+                      selectedAgs={selectedMunicipality?.ags ?? null}
+                      onSelect={handleSelect}
+                      nrwAverage={stats.average}
+                    />
+                  )}
                   <p className="text-xs text-gray-500 dark:text-gray-400 mt-4">
-                    Bewegen Sie die Maus über eine Gemeinde, um Details zu sehen.
+                    Klicken Sie auf eine Gemeinde, um Details und einen
+                    Steuerrechner zu sehen.
                   </p>
                 </div>
               </div>
 
-              <div className="lg:col-span-1">
+              <div className="lg:col-span-1 space-y-4">
+                {stats && (
+                  <MunicipalityDetail
+                    municipality={selectedMunicipality}
+                    stats={stats}
+                    onClear={handleClear}
+                  />
+                )}
                 {colorScale && <MapLegend colorScale={colorScale} />}
 
-                <div className="mt-6 bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg border border-blue-200 dark:border-blue-800">
+                <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg border border-blue-200 dark:border-blue-800">
                   <h3 className="font-semibold text-sm mb-2 text-blue-900 dark:text-blue-100">
                     Datenquellen
                   </h3>
@@ -118,13 +168,11 @@ export default function Home() {
                         OpenGeoData NRW
                       </a>
                     </li>
-                    <li>
-                      • Stand: Januar 2025
-                    </li>
+                    <li>• Stand: Januar 2025</li>
                   </ul>
                 </div>
 
-                <div className="mt-4 bg-yellow-50 dark:bg-yellow-900/20 p-4 rounded-lg border border-yellow-200 dark:border-yellow-800">
+                <div className="bg-yellow-50 dark:bg-yellow-900/20 p-4 rounded-lg border border-yellow-200 dark:border-yellow-800">
                   <h3 className="font-semibold text-sm mb-2 text-yellow-900 dark:text-yellow-100">
                     Rechtlicher Hinweis
                   </h3>
@@ -137,7 +185,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Kreis Analysis Section */}
             <div className="mt-12">
               <KreisAnalysis
                 municipalities={municipalities}
