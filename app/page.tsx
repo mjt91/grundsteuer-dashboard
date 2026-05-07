@@ -15,8 +15,6 @@ import {
 } from "@/lib/stats";
 import StatsPanel from "@/components/StatsPanel";
 import MapLegend from "@/components/MapLegend";
-import KreisAnalysis from "@/components/KreisAnalysis";
-import RateHistogram from "@/components/RateHistogram";
 import MunicipalitySearch from "@/components/MunicipalitySearch";
 import MunicipalityDetail from "@/components/MunicipalityDetail";
 
@@ -88,34 +86,20 @@ export default function Home() {
           <div className="space-y-6">
             {stats && <StatsPanel stats={stats} />}
 
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-              <div className="lg:col-span-2">
-                <RateHistogram municipalities={municipalities} />
-              </div>
-              <div className="lg:col-span-1">
-                <div className="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg border shadow-sm h-full flex items-center justify-center">
-                  <p className="text-gray-500 text-sm">
-                    Additional chart coming soon
-                  </p>
-                </div>
-              </div>
+            <div className="max-w-md mb-4">
+              <MunicipalitySearch
+                municipalities={municipalities}
+                enriched={municipalityData}
+                onSelect={handleSelect}
+              />
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
               <div className="lg:col-span-3">
                 <div className="bg-white dark:bg-gray-800 p-4 rounded-lg border shadow-sm">
-                  <div className="flex items-center justify-between gap-4 mb-4">
-                    <h2 className="text-lg font-semibold whitespace-nowrap">
-                      Interaktive Karte
-                    </h2>
-                    <div className="flex-1 max-w-md">
-                      <MunicipalitySearch
-                        municipalities={municipalities}
-                        enriched={municipalityData}
-                        onSelect={handleSelect}
-                      />
-                    </div>
-                  </div>
+                  <h2 className="text-lg font-semibold mb-4">
+                    Interaktive Karte
+                  </h2>
                   {stats && (
                     <NRWMap
                       municipalitiesData={municipalityData}
@@ -124,10 +108,6 @@ export default function Home() {
                       nrwAverage={stats.average}
                     />
                   )}
-                  <p className="text-xs text-gray-500 dark:text-gray-400 mt-4">
-                    Klicken Sie auf eine Gemeinde, um Details und einen
-                    Steuerrechner zu sehen.
-                  </p>
                 </div>
               </div>
 
@@ -183,13 +163,6 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-            </div>
-
-            <div className="mt-12">
-              <KreisAnalysis
-                municipalities={municipalities}
-                kreisName="Märkischer Kreis"
-              />
             </div>
           </div>
         )}
