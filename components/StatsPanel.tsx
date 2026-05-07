@@ -34,7 +34,7 @@ export default function StatsPanel({ stats }: StatsPanelProps) {
   ];
 
   return (
-    <div className="bg-white dark:bg-gray-800 p-6 rounded-lg border shadow-sm">
+    <div className="bg-white dark:bg-gray-800 p-4 rounded-lg border shadow-sm">
       <h2 className="text-xl font-bold mb-1">NRW Grundsteuer Statistik 2025</h2>
       <p className="text-sm text-gray-600 dark:text-gray-400 mb-6">
         Übersicht über die Grundsteuer B Hebesätze in Nordrhein-Westfalen
@@ -64,17 +64,11 @@ export default function StatsPanel({ stats }: StatsPanelProps) {
         <h3 className="font-semibold mb-2">
           Über die Grundsteuerreform 2025
         </h3>
-        <p className="text-gray-600 dark:text-gray-400 mb-2">
+        <p className="text-gray-600 dark:text-gray-400">
           Seit dem 1. Januar 2025 gilt in NRW das Bundesmodell der Grundsteuer.
           Kommunen können wählen, ob sie einen einheitlichen Hebesatz für
           Grundsteuer B festsetzen oder zwischen Wohngrundstücken und
           Nichtwohngrundstücken differenzieren.
-        </p>
-        <p className="text-xs text-gray-500 dark:text-gray-500">
-          Hinweis: Die Differenzierung unterliegt rechtlicher Prüfung. Das
-          Verwaltungsgericht Gelsenkirchen entschied am 4. Dezember 2025, dass
-          differenzierte Hebesätze gegen den Grundsatz der Steuergerechtigkeit
-          verstoßen.
         </p>
       </div>
     </div>

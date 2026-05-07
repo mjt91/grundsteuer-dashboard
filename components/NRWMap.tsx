@@ -1,13 +1,8 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import dynamic from "next/dynamic";
-import type { GrundsteuerRate, MunicipalityData } from "@/lib/types";
-import {
-  calculateStatistics,
-  generateColorScale,
-  enrichMunicipalityData,
-} from "@/lib/stats";
+import type { MunicipalityData } from "@/lib/types";
 
 // Dynamically import map components to avoid SSR issues
 const MapContainer = dynamic(
@@ -25,55 +20,58 @@ const GeoJSON = dynamic(
 
 import "leaflet/dist/leaflet.css";
 
-export default function NRWMap() {
-  const [enrichedData, setEnrichedData] = useState<MunicipalityData[]>([]);
-  const [stats, setStats] = useState<any>(null);
+interface NRWMapProps {
+  municipalitiesData: MunicipalityData[];
+  selectedAgs: string | null;
+  onSelect: (m: MunicipalityData) => void;
+  nrwAverage: number;
+}
+
+export default function NRWMap({
+  municipalitiesData,
+  selectedAgs,
+  onSelect,
+  nrwAverage,
+}: NRWMapProps) {
   const [geoJsonData, setGeoJsonData] = useState<any>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const layersRef = useRef<Map<string, any>>(new Map());
 
   useEffect(() => {
-    async function loadData() {
+    async function loadGeo() {
       try {
-        // Load Grundsteuer rates
-        const ratesResponse = await fetch("/data/grundsteuer-rates.json");
-        if (!ratesResponse.ok) {
-          throw new Error("Failed to load rates data");
+        const geoResponse = await fetch("/data/nrw-municipalities-geo.json");
+        if (geoResponse.ok) {
+          const geoJson = await geoResponse.json();
+          setGeoJsonData(geoJson);
         }
-        const ratesJson = await ratesResponse.json();
-        const rates = ratesJson.municipalities as GrundsteuerRate[];
-
-        // Calculate statistics
-        const statistics = calculateStatistics(rates);
-        setStats(statistics);
-
-        // Generate color scale
-        const colorScale = generateColorScale(statistics);
-
-        // Enrich data
-        const enriched = enrichMunicipalityData(rates, statistics, colorScale);
-        setEnrichedData(enriched);
-
-        // Try to load GeoJSON data (optional - won't fail if missing)
-        try {
-          const geoResponse = await fetch("/data/nrw-municipalities-geo.json");
-          if (geoResponse.ok) {
-            const geoJson = await geoResponse.json();
-            setGeoJsonData(geoJson);
-          }
-        } catch (geoErr) {
-          console.log("GeoJSON data not available, using markers only");
-        }
-
         setIsLoading(false);
       } catch (err) {
-        setError(err instanceof Error ? err.message : "Failed to load data");
+        setError(err instanceof Error ? err.message : "Failed to load GeoJSON");
         setIsLoading(false);
       }
     }
-
-    loadData();
+    loadGeo();
   }, []);
+
+  // Apply selection styling whenever selectedAgs changes
+  useEffect(() => {
+    layersRef.current.forEach((layer, ags) => {
+      const isSelected = ags === selectedAgs;
+      const municipality = municipalitiesData.find((m) => m.ags === ags);
+      if (!municipality) return;
+      layer.setStyle({
+        fillColor: municipality.color,
+        fillOpacity: isSelected ? 0.85 : 0.6,
+        color: isSelected ? "#1e40af" : "#333333",
+        weight: isSelected ? 4 : 2,
+      });
+      if (isSelected) {
+        layer.bringToFront();
+      }
+    });
+  }, [selectedAgs, municipalitiesData]);
 
   if (isLoading) {
     return (
@@ -99,15 +97,13 @@ export default function NRWMap() {
     );
   }
 
-  // Helper function to get municipality data by AGS
-  const getMunicipalityByAGS = (ags: string) => {
-    return enrichedData.find((m) => m.ags === ags);
-  };
+  const getMunicipalityByAGS = (ags: string) =>
+    municipalitiesData.find((m) => m.ags === ags);
 
-  // Style function for GeoJSON features
   const styleFeature = (feature: any) => {
     const ags = feature.properties.AGS || feature.properties.ags;
     const municipality = getMunicipalityByAGS(ags);
+    const isSelected = ags === selectedAgs;
 
     if (!municipality) {
       return {
@@ -120,67 +116,71 @@ export default function NRWMap() {
 
     return {
       fillColor: municipality.color,
-      fillOpacity: 0.6,
-      color: "#333333",
-      weight: 2,
+      fillOpacity: isSelected ? 0.85 : 0.6,
+      color: isSelected ? "#1e40af" : "#333333",
+      weight: isSelected ? 4 : 2,
     };
   };
 
-  // Event handlers for GeoJSON features
   const onEachFeature = (feature: any, layer: any) => {
     const ags = feature.properties.AGS || feature.properties.ags;
     const municipality = getMunicipalityByAGS(ags);
 
-    if (municipality) {
-      const rate = municipality.isDifferentiated
-        ? `Wohn: ${municipality.residential}% / Nichtwohn: ${municipality.nonResidential}%`
-        : `${municipality.unified}%`;
+    if (!municipality) return;
 
-      const avgDiff = municipality.isDifferentiated
-        ? municipality.displayRate - stats.average
-        : municipality.unified! - stats.average;
+    layersRef.current.set(ags, layer);
 
-      const diffText =
-        avgDiff > 0
-          ? `+${avgDiff.toFixed(0)}% über Durchschnitt`
-          : `${avgDiff.toFixed(0)}% unter Durchschnitt`;
+    const rate = municipality.isDifferentiated
+      ? `Wohn: ${municipality.residential} v.H. / Nichtwohn: ${municipality.nonResidential} v.H.`
+      : `${municipality.unified} v.H.`;
 
-      layer.bindPopup(`
-        <div class="p-2 min-w-[200px]">
-          <h3 class="font-bold text-lg mb-1">${municipality.name}</h3>
-          <p class="text-sm text-gray-600 mb-2">${municipality.kreis}</p>
-          <div class="space-y-1">
-            <p class="text-sm"><span class="font-semibold">Hebesatz:</span> ${rate}</p>
-            <p class="text-xs" style="color: ${avgDiff > 0 ? "#dc2626" : "#16a34a"}">${diffText}</p>
-            <p class="text-xs text-gray-500 mt-2">NRW-Durchschnitt: ${stats.average.toFixed(0)}%</p>
-          </div>
+    const avgDiff = municipality.displayRate - nrwAverage;
+    const diffText =
+      avgDiff > 0
+        ? `+${avgDiff.toFixed(0)} v.H. über Durchschnitt`
+        : `${avgDiff.toFixed(0)} v.H. unter Durchschnitt`;
+
+    layer.bindTooltip(
+      `
+        <div style="padding: 4px; min-width: 180px;">
+          <div style="font-weight: bold; font-size: 13px;">${municipality.name}</div>
+          <div style="font-size: 11px; color: #666; margin-bottom: 4px;">${municipality.kreis ?? ""}</div>
+          <div style="font-size: 12px;"><strong>Hebesatz:</strong> ${rate}</div>
+          <div style="font-size: 11px; color: ${avgDiff > 0 ? "#dc2626" : "#16a34a"};">${diffText}</div>
         </div>
-      `);
+      `,
+      { sticky: true }
+    );
 
-      // Highlight on hover
-      layer.on({
-        mouseover: (e: any) => {
+    layer.on({
+      mouseover: (e: any) => {
+        if (ags !== selectedAgs) {
           e.target.setStyle({
             fillOpacity: 0.8,
             weight: 3,
           });
-        },
-        mouseout: (e: any) => {
+        }
+      },
+      mouseout: (e: any) => {
+        if (ags !== selectedAgs) {
           e.target.setStyle({
             fillOpacity: 0.6,
             weight: 2,
           });
-        },
-      });
-    }
+        }
+      },
+      click: () => {
+        onSelect(municipality);
+      },
+    });
   };
 
   return (
     <div className="w-full h-[600px] rounded-lg overflow-hidden border">
       <MapContainer
         key="nrw-map"
-        center={[51.2500, 7.6350]} // Center of Märkischer Kreis (near Lüdenscheid)
-        zoom={10}
+        center={[51.4332, 7.6616]}
+        zoom={8}
         style={{ height: "100%", width: "100%" }}
         scrollWheelZoom={true}
       >
